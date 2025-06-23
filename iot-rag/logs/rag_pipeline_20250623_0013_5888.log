@@ -1,0 +1,160 @@
+[2025-06-23 00:13:58,887] INFO main:231 - ------ Command line arguments -------
+[2025-06-23 00:13:58,887] INFO main:232 - step                : step03_store_vectors
+[2025-06-23 00:13:58,888] INFO main:233 - input_filename      : None
+[2025-06-23 00:13:58,888] INFO main:234 - query_args          : None
+[2025-06-23 00:13:58,888] INFO main:235 - use_rag             : False
+[2025-06-23 00:13:58,888] INFO main:236 - ------ Config Settings -------
+[2025-06-23 00:13:58,889] INFO main:238 - cleaned_text_directory        : data/cleaned_text
+[2025-06-23 00:13:58,889] INFO main:238 - collection_name               : collections
+[2025-06-23 00:13:58,900] INFO main:238 - embedding_model_name          : sentence-transformers/all-MiniLM-L6-v2
+[2025-06-23 00:13:58,900] INFO main:238 - embeddings_directory          : data/embeddings
+[2025-06-23 00:13:58,900] INFO main:238 - llm_api_url                   : http://127.0.0.1:1234
+[2025-06-23 00:13:58,900] INFO main:238 - llm_model_name                : llama-3.2-1b-instruct
+[2025-06-23 00:13:58,901] INFO main:238 - log_level                     : DEBUG
+[2025-06-23 00:13:58,901] INFO main:238 - raw_input_directory           : data/raw_input
+[2025-06-23 00:13:58,901] INFO main:238 - retriever_min_score_threshold : 0.2
+[2025-06-23 00:13:58,902] INFO main:238 - vectordb_directory            : data/vectordb
+[2025-06-23 00:13:58,902] INFO main:239 - ------------------------------
+[2025-06-23 00:13:58,903] INFO main:56 - Ensured directory exists: data\raw_input
+[2025-06-23 00:13:58,903] INFO main:56 - Ensured directory exists: data\cleaned_text
+[2025-06-23 00:13:58,904] INFO main:56 - Ensured directory exists: data\embeddings
+[2025-06-23 00:13:58,904] INFO main:56 - Ensured directory exists: data\vectordb
+[2025-06-23 00:13:58,905] INFO main:92 - [Step 03] Vector storage started.
+[2025-06-23 00:13:58,905] INFO main:95 - Deleting existing vectordb
+[2025-06-23 00:13:58,959] INFO posthog:22 - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[2025-06-23 00:13:59,156] INFO embedding_loader:30 - Initialized ChromaDB client at data\vectordb
+[2025-06-23 00:13:59,222] INFO embedding_loader:102 - Stored: A000062-datasheet_chunk1
+[2025-06-23 00:13:59,240] INFO embedding_loader:102 - Stored: A000062-datasheet_chunk10
+[2025-06-23 00:13:59,256] INFO embedding_loader:102 - Stored: A000062-datasheet_chunk11
+[2025-06-23 00:13:59,272] INFO embedding_loader:102 - Stored: A000062-datasheet_chunk12
+[2025-06-23 00:13:59,286] INFO embedding_loader:102 - Stored: A000062-datasheet_chunk13
+[2025-06-23 00:13:59,299] INFO embedding_loader:102 - Stored: A000062-datasheet_chunk14
+[2025-06-23 00:13:59,314] INFO embedding_loader:102 - Stored: A000062-datasheet_chunk15
+[2025-06-23 00:13:59,328] INFO embedding_loader:102 - Stored: A000062-datasheet_chunk16
+[2025-06-23 00:13:59,343] INFO embedding_loader:102 - Stored: A000062-datasheet_chunk17
+[2025-06-23 00:13:59,359] INFO embedding_loader:102 - Stored: A000062-datasheet_chunk18
+[2025-06-23 00:13:59,375] INFO embedding_loader:102 - Stored: A000062-datasheet_chunk19
+[2025-06-23 00:13:59,389] INFO embedding_loader:102 - Stored: A000062-datasheet_chunk2
+[2025-06-23 00:13:59,404] INFO embedding_loader:102 - Stored: A000062-datasheet_chunk20
+[2025-06-23 00:13:59,420] INFO embedding_loader:102 - Stored: A000062-datasheet_chunk21
+[2025-06-23 00:13:59,436] INFO embedding_loader:102 - Stored: A000062-datasheet_chunk22
+[2025-06-23 00:13:59,453] INFO embedding_loader:102 - Stored: A000062-datasheet_chunk23
+[2025-06-23 00:13:59,470] INFO embedding_loader:102 - Stored: A000062-datasheet_chunk24
+[2025-06-23 00:13:59,486] INFO embedding_loader:102 - Stored: A000062-datasheet_chunk25
+[2025-06-23 00:13:59,504] INFO embedding_loader:102 - Stored: A000062-datasheet_chunk26
+[2025-06-23 00:13:59,521] INFO embedding_loader:102 - Stored: A000062-datasheet_chunk27
+[2025-06-23 00:13:59,537] INFO embedding_loader:102 - Stored: A000062-datasheet_chunk28
+[2025-06-23 00:13:59,554] INFO embedding_loader:102 - Stored: A000062-datasheet_chunk29
+[2025-06-23 00:13:59,571] INFO embedding_loader:102 - Stored: A000062-datasheet_chunk3
+[2025-06-23 00:13:59,588] INFO embedding_loader:102 - Stored: A000062-datasheet_chunk30
+[2025-06-23 00:13:59,603] INFO embedding_loader:102 - Stored: A000062-datasheet_chunk31
+[2025-06-23 00:13:59,619] INFO embedding_loader:102 - Stored: A000062-datasheet_chunk32
+[2025-06-23 00:13:59,638] INFO embedding_loader:102 - Stored: A000062-datasheet_chunk33
+[2025-06-23 00:13:59,661] INFO embedding_loader:102 - Stored: A000062-datasheet_chunk34
+[2025-06-23 00:13:59,680] INFO embedding_loader:102 - Stored: A000062-datasheet_chunk35
+[2025-06-23 00:13:59,697] INFO embedding_loader:102 - Stored: A000062-datasheet_chunk36
+[2025-06-23 00:13:59,712] INFO embedding_loader:102 - Stored: A000062-datasheet_chunk37
+[2025-06-23 00:13:59,728] INFO embedding_loader:102 - Stored: A000062-datasheet_chunk38
+[2025-06-23 00:13:59,743] INFO embedding_loader:102 - Stored: A000062-datasheet_chunk39
+[2025-06-23 00:13:59,759] INFO embedding_loader:102 - Stored: A000062-datasheet_chunk4
+[2025-06-23 00:13:59,777] INFO embedding_loader:102 - Stored: A000062-datasheet_chunk40
+[2025-06-23 00:13:59,794] INFO embedding_loader:102 - Stored: A000062-datasheet_chunk41
+[2025-06-23 00:13:59,809] INFO embedding_loader:102 - Stored: A000062-datasheet_chunk42
+[2025-06-23 00:13:59,825] INFO embedding_loader:102 - Stored: A000062-datasheet_chunk43
+[2025-06-23 00:13:59,840] INFO embedding_loader:102 - Stored: A000062-datasheet_chunk44
+[2025-06-23 00:13:59,859] INFO embedding_loader:102 - Stored: A000062-datasheet_chunk5
+[2025-06-23 00:13:59,880] INFO embedding_loader:102 - Stored: A000062-datasheet_chunk6
+[2025-06-23 00:13:59,900] INFO embedding_loader:102 - Stored: A000062-datasheet_chunk7
+[2025-06-23 00:13:59,917] INFO embedding_loader:102 - Stored: A000062-datasheet_chunk8
+[2025-06-23 00:13:59,932] INFO embedding_loader:102 - Stored: A000062-datasheet_chunk9
+[2025-06-23 00:13:59,948] INFO embedding_loader:102 - Stored: A000062-datasheet_cleaned
+[2025-06-23 00:13:59,966] INFO embedding_loader:102 - Stored: ABX00030-datasheet_chunk1
+[2025-06-23 00:13:59,984] INFO embedding_loader:102 - Stored: ABX00030-datasheet_chunk10
+[2025-06-23 00:14:00,003] INFO embedding_loader:102 - Stored: ABX00030-datasheet_chunk11
+[2025-06-23 00:14:00,023] INFO embedding_loader:102 - Stored: ABX00030-datasheet_chunk12
+[2025-06-23 00:14:00,043] INFO embedding_loader:102 - Stored: ABX00030-datasheet_chunk13
+[2025-06-23 00:14:00,063] INFO embedding_loader:102 - Stored: ABX00030-datasheet_chunk14
+[2025-06-23 00:14:00,088] INFO embedding_loader:102 - Stored: ABX00030-datasheet_chunk15
+[2025-06-23 00:14:00,105] INFO embedding_loader:102 - Stored: ABX00030-datasheet_chunk16
+[2025-06-23 00:14:00,123] INFO embedding_loader:102 - Stored: ABX00030-datasheet_chunk17
+[2025-06-23 00:14:00,142] INFO embedding_loader:102 - Stored: ABX00030-datasheet_chunk2
+[2025-06-23 00:14:00,158] INFO embedding_loader:102 - Stored: ABX00030-datasheet_chunk3
+[2025-06-23 00:14:00,176] INFO embedding_loader:102 - Stored: ABX00030-datasheet_chunk4
+[2025-06-23 00:14:00,192] INFO embedding_loader:102 - Stored: ABX00030-datasheet_chunk5
+[2025-06-23 00:14:00,210] INFO embedding_loader:102 - Stored: ABX00030-datasheet_chunk6
+[2025-06-23 00:14:00,227] INFO embedding_loader:102 - Stored: ABX00030-datasheet_chunk7
+[2025-06-23 00:14:00,245] INFO embedding_loader:102 - Stored: ABX00030-datasheet_chunk8
+[2025-06-23 00:14:00,264] INFO embedding_loader:102 - Stored: ABX00030-datasheet_chunk9
+[2025-06-23 00:14:00,283] INFO embedding_loader:102 - Stored: ABX00030-datasheet_cleaned
+[2025-06-23 00:14:00,306] INFO embedding_loader:102 - Stored: ABX00080-datasheet_chunk1
+[2025-06-23 00:14:00,328] INFO embedding_loader:102 - Stored: ABX00080-datasheet_chunk10
+[2025-06-23 00:14:00,348] INFO embedding_loader:102 - Stored: ABX00080-datasheet_chunk11
+[2025-06-23 00:14:00,371] INFO embedding_loader:102 - Stored: ABX00080-datasheet_chunk12
+[2025-06-23 00:14:00,392] INFO embedding_loader:102 - Stored: ABX00080-datasheet_chunk13
+[2025-06-23 00:14:00,413] INFO embedding_loader:102 - Stored: ABX00080-datasheet_chunk14
+[2025-06-23 00:14:00,435] INFO embedding_loader:102 - Stored: ABX00080-datasheet_chunk15
+[2025-06-23 00:14:00,458] INFO embedding_loader:102 - Stored: ABX00080-datasheet_chunk16
+[2025-06-23 00:14:00,478] INFO embedding_loader:102 - Stored: ABX00080-datasheet_chunk17
+[2025-06-23 00:14:00,500] INFO embedding_loader:102 - Stored: ABX00080-datasheet_chunk18
+[2025-06-23 00:14:00,524] INFO embedding_loader:102 - Stored: ABX00080-datasheet_chunk19
+[2025-06-23 00:14:00,545] INFO embedding_loader:102 - Stored: ABX00080-datasheet_chunk2
+[2025-06-23 00:14:00,568] INFO embedding_loader:102 - Stored: ABX00080-datasheet_chunk20
+[2025-06-23 00:14:00,587] INFO embedding_loader:102 - Stored: ABX00080-datasheet_chunk21
+[2025-06-23 00:14:00,606] INFO embedding_loader:102 - Stored: ABX00080-datasheet_chunk22
+[2025-06-23 00:14:00,634] INFO embedding_loader:102 - Stored: ABX00080-datasheet_chunk23
+[2025-06-23 00:14:00,654] INFO embedding_loader:102 - Stored: ABX00080-datasheet_chunk24
+[2025-06-23 00:14:00,675] INFO embedding_loader:102 - Stored: ABX00080-datasheet_chunk25
+[2025-06-23 00:14:00,694] INFO embedding_loader:102 - Stored: ABX00080-datasheet_chunk26
+[2025-06-23 00:14:00,713] INFO embedding_loader:102 - Stored: ABX00080-datasheet_chunk27
+[2025-06-23 00:14:00,730] INFO embedding_loader:102 - Stored: ABX00080-datasheet_chunk28
+[2025-06-23 00:14:00,746] INFO embedding_loader:102 - Stored: ABX00080-datasheet_chunk3
+[2025-06-23 00:14:00,761] INFO embedding_loader:102 - Stored: ABX00080-datasheet_chunk4
+[2025-06-23 00:14:00,778] INFO embedding_loader:102 - Stored: ABX00080-datasheet_chunk5
+[2025-06-23 00:14:00,798] INFO embedding_loader:102 - Stored: ABX00080-datasheet_chunk6
+[2025-06-23 00:14:00,816] INFO embedding_loader:102 - Stored: ABX00080-datasheet_chunk7
+[2025-06-23 00:14:00,835] INFO embedding_loader:102 - Stored: ABX00080-datasheet_chunk8
+[2025-06-23 00:14:00,853] INFO embedding_loader:102 - Stored: ABX00080-datasheet_chunk9
+[2025-06-23 00:14:00,871] INFO embedding_loader:102 - Stored: ABX00080-datasheet_cleaned
+[2025-06-23 00:14:00,890] INFO embedding_loader:102 - Stored: Arduino 33 BLE-datasheet
+[2025-06-23 00:14:00,913] INFO embedding_loader:102 - Stored: Arduino Due-datasheet
+[2025-06-23 00:14:00,936] INFO embedding_loader:102 - Stored: Arduino Uno R4-datsheet
+[2025-06-23 00:14:00,958] INFO embedding_loader:102 - Stored: ATMEGA2560
+[2025-06-23 00:14:00,981] INFO embedding_loader:102 - Stored: ATMEGA2560_chunk1
+[2025-06-23 00:14:01,001] INFO embedding_loader:102 - Stored: ATMEGA2560_chunk10
+[2025-06-23 00:14:01,023] INFO embedding_loader:102 - Stored: ATMEGA2560_chunk11
+[2025-06-23 00:14:01,044] INFO embedding_loader:102 - Stored: ATMEGA2560_chunk12
+[2025-06-23 00:14:01,065] INFO embedding_loader:102 - Stored: ATMEGA2560_chunk13
+[2025-06-23 00:14:01,088] INFO embedding_loader:102 - Stored: ATMEGA2560_chunk14
+[2025-06-23 00:14:01,108] INFO embedding_loader:102 - Stored: ATMEGA2560_chunk15
+[2025-06-23 00:14:01,129] INFO embedding_loader:102 - Stored: ATMEGA2560_chunk16
+[2025-06-23 00:14:01,151] INFO embedding_loader:102 - Stored: ATMEGA2560_chunk17
+[2025-06-23 00:14:01,173] INFO embedding_loader:102 - Stored: ATMEGA2560_chunk18
+[2025-06-23 00:14:01,194] INFO embedding_loader:102 - Stored: ATMEGA2560_chunk19
+[2025-06-23 00:14:01,215] INFO embedding_loader:102 - Stored: ATMEGA2560_chunk2
+[2025-06-23 00:14:01,241] INFO embedding_loader:102 - Stored: ATMEGA2560_chunk20
+[2025-06-23 00:14:01,266] INFO embedding_loader:102 - Stored: ATMEGA2560_chunk21
+[2025-06-23 00:14:01,289] INFO embedding_loader:102 - Stored: ATMEGA2560_chunk22
+[2025-06-23 00:14:01,312] INFO embedding_loader:102 - Stored: ATMEGA2560_chunk23
+[2025-06-23 00:14:01,341] INFO embedding_loader:102 - Stored: ATMEGA2560_chunk24
+[2025-06-23 00:14:01,366] INFO embedding_loader:102 - Stored: ATMEGA2560_chunk25
+[2025-06-23 00:14:01,392] INFO embedding_loader:102 - Stored: ATMEGA2560_chunk26
+[2025-06-23 00:14:01,414] INFO embedding_loader:102 - Stored: ATMEGA2560_chunk27
+[2025-06-23 00:14:01,440] INFO embedding_loader:102 - Stored: ATMEGA2560_chunk3
+[2025-06-23 00:14:01,463] INFO embedding_loader:102 - Stored: ATMEGA2560_chunk4
+[2025-06-23 00:14:01,485] INFO embedding_loader:102 - Stored: ATMEGA2560_chunk5
+[2025-06-23 00:14:01,505] INFO embedding_loader:102 - Stored: ATMEGA2560_chunk6
+[2025-06-23 00:14:01,526] INFO embedding_loader:102 - Stored: ATMEGA2560_chunk7
+[2025-06-23 00:14:01,552] INFO embedding_loader:102 - Stored: ATMEGA2560_chunk8
+[2025-06-23 00:14:01,572] INFO embedding_loader:102 - Stored: ATMEGA2560_chunk9
+[2025-06-23 00:14:01,593] INFO embedding_loader:102 - Stored: ATMEGA2560_cleaned
+[2025-06-23 00:14:01,616] INFO embedding_loader:102 - Stored: ATMEGA328P
+[2025-06-23 00:14:01,639] INFO embedding_loader:102 - Stored: ATMEGA328P_chunk1
+[2025-06-23 00:14:01,663] INFO embedding_loader:102 - Stored: ATMEGA328P_cleaned
+[2025-06-23 00:14:01,685] INFO embedding_loader:102 - Stored: ESP32
+[2025-06-23 00:14:01,707] INFO embedding_loader:102 - Stored: ESP32_chunk1
+[2025-06-23 00:14:01,727] INFO embedding_loader:102 - Stored: ESP32_cleaned
+[2025-06-23 00:14:01,750] INFO embedding_loader:102 - Stored: RP2040
+[2025-06-23 00:14:01,772] INFO embedding_loader:102 - Stored: RP2040_chunk1
+[2025-06-23 00:14:01,796] INFO embedding_loader:102 - Stored: RP2040_cleaned
+[2025-06-23 00:14:01,800] INFO main:112 - [Step 03] Vector storage completed.
+[2025-06-23 00:14:01,801] INFO main:257 - RAG pipeline done

@@ -1,0 +1,1 @@
+{"source_file": "ESP32_chunk1.txt", "text_preview": "esp32 - wroom - 32 datasheet 1. microcontroller specifications : type : esp32 memory : 4mb flash, 520kb sram. no eeprom. clock speed : 240 mhz. features include various security features like encryption. peripherals : wi - fi, bluetooth, uart, spi, i2c, i2s, 18x adc, 2x dac, timers, pwm. 2. pin conf"}

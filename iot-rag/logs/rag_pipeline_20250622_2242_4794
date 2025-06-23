@@ -1,0 +1,26 @@
+[2025-06-22 22:42:47,943] INFO main:195 - ------ Command line arguments -------
+[2025-06-22 22:42:47,943] INFO main:196 - step                                              : step02_generate_embeddings
+[2025-06-22 22:42:47,943] INFO main:197 - input_filename                                    : None
+[2025-06-22 22:42:47,943] INFO main:198 - query_args                                        : None
+[2025-06-22 22:42:47,943] INFO main:199 - use_rag                                           : False
+[2025-06-22 22:42:47,943] INFO main:200 - ------ Config Settings -------
+[2025-06-22 22:42:47,954] INFO main:202 - cleaned_text_directory                            : data/cleaned_text
+[2025-06-22 22:42:47,954] INFO main:202 - collection_name                                   : collections
+[2025-06-22 22:42:47,955] INFO main:202 - embedding_model_name                              : sentence-transformers/all-MiniLM-L6-v2
+[2025-06-22 22:42:47,955] INFO main:202 - embeddings_directory                              : data/embeddings
+[2025-06-22 22:42:47,956] INFO main:202 - llm_api_url                                       : http://127.0.0.1:1234
+[2025-06-22 22:42:47,957] INFO main:202 - llm_model_name                                    : llama-3.2-1b-instruct
+[2025-06-22 22:42:47,957] INFO main:202 - log_level                                         : debug
+[2025-06-22 22:42:47,957] INFO main:202 - raw_input_directory                               : data/raw_input
+[2025-06-22 22:42:47,958] INFO main:202 - retriever_min_score_threshold                     : 0.5
+[2025-06-22 22:42:47,958] INFO main:202 - vectordb_directory                                : data/vectordb
+[2025-06-22 22:42:47,958] INFO main:203 - ------------------------------
+[2025-06-22 22:42:47,958] INFO main:46 - Ensured directory exists: data\raw_input
+[2025-06-22 22:42:47,958] INFO main:46 - Ensured directory exists: data\cleaned_text
+[2025-06-22 22:42:47,958] INFO main:46 - Ensured directory exists: data\embeddings
+[2025-06-22 22:42:47,959] INFO main:46 - Ensured directory exists: data\vectordb
+[2025-06-22 22:42:47,959] INFO main:67 - [Step 02] Embedding generation started.
+[2025-06-22 22:42:52,082] INFO embedding_preparer:29 - Loaded tokenizer and model: sentence-transformers/all-MiniLM-L6-v2 on cpu
+[2025-06-22 22:42:52,083] WARNING embedding_preparer:42 - Encountered a None or empty file name string in the list. Skipping.
+[2025-06-22 22:42:52,083] INFO main:76 - [Step 02] Embedding generation completed.
+[2025-06-22 22:42:52,087] INFO main:216 - RAG pipeline done

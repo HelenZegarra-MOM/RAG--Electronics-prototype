@@ -1,0 +1,1 @@
+{"source_file": "A000062-datasheet_chunk10.txt", "text_preview": ". 6. 2. 1 board ' s 24 - pin header pin function type description 1 nc nc not connected 2 ioref ioref reference for digital logic voltage - connected to 3. 3 v 3 reset reset reset 4 + 3v3 power + 3v3 power rail 5 + 5v power + 5v power rail 6 gnd power ground 7 gnd power ground 8 vin power voltage in"}

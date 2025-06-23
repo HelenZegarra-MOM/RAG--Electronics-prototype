@@ -1,0 +1,277 @@
+[2025-06-22 23:33:59,176] INFO main:231 - ------ Command line arguments -------
+[2025-06-22 23:33:59,176] INFO main:232 - step                : step02_generate_embeddings
+[2025-06-22 23:33:59,176] INFO main:233 - input_filename      : None
+[2025-06-22 23:33:59,178] INFO main:234 - query_args          : None
+[2025-06-22 23:33:59,178] INFO main:235 - use_rag             : False
+[2025-06-22 23:33:59,178] INFO main:236 - ------ Config Settings -------
+[2025-06-22 23:33:59,178] INFO main:238 - cleaned_text_directory        : data/cleaned_text
+[2025-06-22 23:33:59,178] INFO main:238 - collection_name               : collections
+[2025-06-22 23:33:59,178] INFO main:238 - embedding_model_name          : sentence-transformers/all-MiniLM-L6-v2
+[2025-06-22 23:33:59,179] INFO main:238 - embeddings_directory          : data/embeddings
+[2025-06-22 23:33:59,179] INFO main:238 - llm_api_url                   : http://127.0.0.1:1234
+[2025-06-22 23:33:59,179] INFO main:238 - llm_model_name                : llama-3.2-1b-instruct
+[2025-06-22 23:33:59,179] INFO main:238 - log_level                     : DEBUG
+[2025-06-22 23:33:59,179] INFO main:238 - raw_input_directory           : data/raw_input
+[2025-06-22 23:33:59,179] INFO main:238 - retriever_min_score_threshold : 0.2
+[2025-06-22 23:33:59,179] INFO main:238 - vectordb_directory            : data/vectordb
+[2025-06-22 23:33:59,180] INFO main:239 - ------------------------------
+[2025-06-22 23:33:59,180] INFO main:56 - Ensured directory exists: data\raw_input
+[2025-06-22 23:33:59,180] INFO main:56 - Ensured directory exists: data\cleaned_text
+[2025-06-22 23:33:59,181] INFO main:56 - Ensured directory exists: data\embeddings
+[2025-06-22 23:33:59,181] INFO main:56 - Ensured directory exists: data\vectordb
+[2025-06-22 23:33:59,181] INFO main:74 - [Step 02] Embedding generation started.
+[2025-06-22 23:34:01,120] INFO embedding_preparer:26 - Loaded model/tokenizer: sentence-transformers/all-MiniLM-L6-v2 on cpu
+[2025-06-22 23:34:01,121] INFO embedding_preparer:46 - Processing: data\cleaned_text\A000062-datasheet_chunk1.txt
+[2025-06-22 23:34:01,242] INFO embedding_preparer:85 - Saved embedding: data\embeddings\A000062-datasheet_chunk1_embeddings.json
+[2025-06-22 23:34:01,243] INFO embedding_preparer:46 - Processing: data\cleaned_text\A000062-datasheet_chunk10.txt
+[2025-06-22 23:34:01,372] INFO embedding_preparer:85 - Saved embedding: data\embeddings\A000062-datasheet_chunk10_embeddings.json
+[2025-06-22 23:34:01,373] INFO embedding_preparer:46 - Processing: data\cleaned_text\A000062-datasheet_chunk11.txt
+[2025-06-22 23:34:01,517] INFO embedding_preparer:85 - Saved embedding: data\embeddings\A000062-datasheet_chunk11_embeddings.json
+[2025-06-22 23:34:01,519] INFO embedding_preparer:46 - Processing: data\cleaned_text\A000062-datasheet_chunk12.txt
+[2025-06-22 23:34:01,662] INFO embedding_preparer:85 - Saved embedding: data\embeddings\A000062-datasheet_chunk12_embeddings.json
+[2025-06-22 23:34:01,674] INFO embedding_preparer:46 - Processing: data\cleaned_text\A000062-datasheet_chunk13.txt
+[2025-06-22 23:34:01,824] INFO embedding_preparer:85 - Saved embedding: data\embeddings\A000062-datasheet_chunk13_embeddings.json
+[2025-06-22 23:34:01,825] INFO embedding_preparer:46 - Processing: data\cleaned_text\A000062-datasheet_chunk14.txt
+[2025-06-22 23:34:01,983] INFO embedding_preparer:85 - Saved embedding: data\embeddings\A000062-datasheet_chunk14_embeddings.json
+[2025-06-22 23:34:01,985] INFO embedding_preparer:46 - Processing: data\cleaned_text\A000062-datasheet_chunk15.txt
+[2025-06-22 23:34:02,149] INFO embedding_preparer:85 - Saved embedding: data\embeddings\A000062-datasheet_chunk15_embeddings.json
+[2025-06-22 23:34:02,151] INFO embedding_preparer:46 - Processing: data\cleaned_text\A000062-datasheet_chunk16.txt
+[2025-06-22 23:34:02,315] INFO embedding_preparer:85 - Saved embedding: data\embeddings\A000062-datasheet_chunk16_embeddings.json
+[2025-06-22 23:34:02,317] INFO embedding_preparer:46 - Processing: data\cleaned_text\A000062-datasheet_chunk17.txt
+[2025-06-22 23:34:02,494] INFO embedding_preparer:85 - Saved embedding: data\embeddings\A000062-datasheet_chunk17_embeddings.json
+[2025-06-22 23:34:02,496] INFO embedding_preparer:46 - Processing: data\cleaned_text\A000062-datasheet_chunk18.txt
+[2025-06-22 23:34:02,641] INFO embedding_preparer:85 - Saved embedding: data\embeddings\A000062-datasheet_chunk18_embeddings.json
+[2025-06-22 23:34:02,643] INFO embedding_preparer:46 - Processing: data\cleaned_text\A000062-datasheet_chunk19.txt
+[2025-06-22 23:34:02,811] INFO embedding_preparer:85 - Saved embedding: data\embeddings\A000062-datasheet_chunk19_embeddings.json
+[2025-06-22 23:34:02,813] INFO embedding_preparer:46 - Processing: data\cleaned_text\A000062-datasheet_chunk2.txt
+[2025-06-22 23:34:02,997] INFO embedding_preparer:85 - Saved embedding: data\embeddings\A000062-datasheet_chunk2_embeddings.json
+[2025-06-22 23:34:03,000] INFO embedding_preparer:46 - Processing: data\cleaned_text\A000062-datasheet_chunk20.txt
+[2025-06-22 23:34:03,187] INFO embedding_preparer:85 - Saved embedding: data\embeddings\A000062-datasheet_chunk20_embeddings.json
+[2025-06-22 23:34:03,189] INFO embedding_preparer:46 - Processing: data\cleaned_text\A000062-datasheet_chunk21.txt
+[2025-06-22 23:34:03,399] INFO embedding_preparer:85 - Saved embedding: data\embeddings\A000062-datasheet_chunk21_embeddings.json
+[2025-06-22 23:34:03,402] INFO embedding_preparer:46 - Processing: data\cleaned_text\A000062-datasheet_chunk22.txt
+[2025-06-22 23:34:03,621] INFO embedding_preparer:85 - Saved embedding: data\embeddings\A000062-datasheet_chunk22_embeddings.json
+[2025-06-22 23:34:03,624] INFO embedding_preparer:46 - Processing: data\cleaned_text\A000062-datasheet_chunk23.txt
+[2025-06-22 23:34:03,810] INFO embedding_preparer:85 - Saved embedding: data\embeddings\A000062-datasheet_chunk23_embeddings.json
+[2025-06-22 23:34:03,812] INFO embedding_preparer:46 - Processing: data\cleaned_text\A000062-datasheet_chunk24.txt
+[2025-06-22 23:34:03,985] INFO embedding_preparer:85 - Saved embedding: data\embeddings\A000062-datasheet_chunk24_embeddings.json
+[2025-06-22 23:34:03,987] INFO embedding_preparer:46 - Processing: data\cleaned_text\A000062-datasheet_chunk25.txt
+[2025-06-22 23:34:04,156] INFO embedding_preparer:85 - Saved embedding: data\embeddings\A000062-datasheet_chunk25_embeddings.json
+[2025-06-22 23:34:04,160] INFO embedding_preparer:46 - Processing: data\cleaned_text\A000062-datasheet_chunk26.txt
+[2025-06-22 23:34:04,359] INFO embedding_preparer:85 - Saved embedding: data\embeddings\A000062-datasheet_chunk26_embeddings.json
+[2025-06-22 23:34:04,361] INFO embedding_preparer:46 - Processing: data\cleaned_text\A000062-datasheet_chunk27.txt
+[2025-06-22 23:34:04,539] INFO embedding_preparer:85 - Saved embedding: data\embeddings\A000062-datasheet_chunk27_embeddings.json
+[2025-06-22 23:34:04,541] INFO embedding_preparer:46 - Processing: data\cleaned_text\A000062-datasheet_chunk28.txt
+[2025-06-22 23:34:04,715] INFO embedding_preparer:85 - Saved embedding: data\embeddings\A000062-datasheet_chunk28_embeddings.json
+[2025-06-22 23:34:04,717] INFO embedding_preparer:46 - Processing: data\cleaned_text\A000062-datasheet_chunk29.txt
+[2025-06-22 23:34:04,883] INFO embedding_preparer:85 - Saved embedding: data\embeddings\A000062-datasheet_chunk29_embeddings.json
+[2025-06-22 23:34:04,885] INFO embedding_preparer:46 - Processing: data\cleaned_text\A000062-datasheet_chunk3.txt
+[2025-06-22 23:34:05,056] INFO embedding_preparer:85 - Saved embedding: data\embeddings\A000062-datasheet_chunk3_embeddings.json
+[2025-06-22 23:34:05,058] INFO embedding_preparer:46 - Processing: data\cleaned_text\A000062-datasheet_chunk30.txt
+[2025-06-22 23:34:05,230] INFO embedding_preparer:85 - Saved embedding: data\embeddings\A000062-datasheet_chunk30_embeddings.json
+[2025-06-22 23:34:05,233] INFO embedding_preparer:46 - Processing: data\cleaned_text\A000062-datasheet_chunk31.txt
+[2025-06-22 23:34:05,424] INFO embedding_preparer:85 - Saved embedding: data\embeddings\A000062-datasheet_chunk31_embeddings.json
+[2025-06-22 23:34:05,437] INFO embedding_preparer:46 - Processing: data\cleaned_text\A000062-datasheet_chunk32.txt
+[2025-06-22 23:34:05,635] INFO embedding_preparer:85 - Saved embedding: data\embeddings\A000062-datasheet_chunk32_embeddings.json
+[2025-06-22 23:34:05,637] INFO embedding_preparer:46 - Processing: data\cleaned_text\A000062-datasheet_chunk33.txt
+[2025-06-22 23:34:05,804] INFO embedding_preparer:85 - Saved embedding: data\embeddings\A000062-datasheet_chunk33_embeddings.json
+[2025-06-22 23:34:05,806] INFO embedding_preparer:46 - Processing: data\cleaned_text\A000062-datasheet_chunk34.txt
+[2025-06-22 23:34:05,976] INFO embedding_preparer:85 - Saved embedding: data\embeddings\A000062-datasheet_chunk34_embeddings.json
+[2025-06-22 23:34:05,979] INFO embedding_preparer:46 - Processing: data\cleaned_text\A000062-datasheet_chunk35.txt
+[2025-06-22 23:34:06,158] INFO embedding_preparer:85 - Saved embedding: data\embeddings\A000062-datasheet_chunk35_embeddings.json
+[2025-06-22 23:34:06,161] INFO embedding_preparer:46 - Processing: data\cleaned_text\A000062-datasheet_chunk36.txt
+[2025-06-22 23:34:06,334] INFO embedding_preparer:85 - Saved embedding: data\embeddings\A000062-datasheet_chunk36_embeddings.json
+[2025-06-22 23:34:06,337] INFO embedding_preparer:46 - Processing: data\cleaned_text\A000062-datasheet_chunk37.txt
+[2025-06-22 23:34:06,525] INFO embedding_preparer:85 - Saved embedding: data\embeddings\A000062-datasheet_chunk37_embeddings.json
+[2025-06-22 23:34:06,528] INFO embedding_preparer:46 - Processing: data\cleaned_text\A000062-datasheet_chunk38.txt
+[2025-06-22 23:34:06,715] INFO embedding_preparer:85 - Saved embedding: data\embeddings\A000062-datasheet_chunk38_embeddings.json
+[2025-06-22 23:34:06,717] INFO embedding_preparer:46 - Processing: data\cleaned_text\A000062-datasheet_chunk39.txt
+[2025-06-22 23:34:06,881] INFO embedding_preparer:85 - Saved embedding: data\embeddings\A000062-datasheet_chunk39_embeddings.json
+[2025-06-22 23:34:06,883] INFO embedding_preparer:46 - Processing: data\cleaned_text\A000062-datasheet_chunk4.txt
+[2025-06-22 23:34:07,060] INFO embedding_preparer:85 - Saved embedding: data\embeddings\A000062-datasheet_chunk4_embeddings.json
+[2025-06-22 23:34:07,062] INFO embedding_preparer:46 - Processing: data\cleaned_text\A000062-datasheet_chunk40.txt
+[2025-06-22 23:34:07,233] INFO embedding_preparer:85 - Saved embedding: data\embeddings\A000062-datasheet_chunk40_embeddings.json
+[2025-06-22 23:34:07,235] INFO embedding_preparer:46 - Processing: data\cleaned_text\A000062-datasheet_chunk41.txt
+[2025-06-22 23:34:07,407] INFO embedding_preparer:85 - Saved embedding: data\embeddings\A000062-datasheet_chunk41_embeddings.json
+[2025-06-22 23:34:07,409] INFO embedding_preparer:46 - Processing: data\cleaned_text\A000062-datasheet_chunk42.txt
+[2025-06-22 23:34:07,604] INFO embedding_preparer:85 - Saved embedding: data\embeddings\A000062-datasheet_chunk42_embeddings.json
+[2025-06-22 23:34:07,606] INFO embedding_preparer:46 - Processing: data\cleaned_text\A000062-datasheet_chunk43.txt
+[2025-06-22 23:34:07,780] INFO embedding_preparer:85 - Saved embedding: data\embeddings\A000062-datasheet_chunk43_embeddings.json
+[2025-06-22 23:34:07,792] INFO embedding_preparer:46 - Processing: data\cleaned_text\A000062-datasheet_chunk44.txt
+[2025-06-22 23:34:07,864] INFO embedding_preparer:85 - Saved embedding: data\embeddings\A000062-datasheet_chunk44_embeddings.json
+[2025-06-22 23:34:07,866] INFO embedding_preparer:46 - Processing: data\cleaned_text\A000062-datasheet_chunk5.txt
+[2025-06-22 23:34:08,033] INFO embedding_preparer:85 - Saved embedding: data\embeddings\A000062-datasheet_chunk5_embeddings.json
+[2025-06-22 23:34:08,034] INFO embedding_preparer:46 - Processing: data\cleaned_text\A000062-datasheet_chunk6.txt
+[2025-06-22 23:34:08,187] INFO embedding_preparer:85 - Saved embedding: data\embeddings\A000062-datasheet_chunk6_embeddings.json
+[2025-06-22 23:34:08,189] INFO embedding_preparer:46 - Processing: data\cleaned_text\A000062-datasheet_chunk7.txt
+[2025-06-22 23:34:08,341] INFO embedding_preparer:85 - Saved embedding: data\embeddings\A000062-datasheet_chunk7_embeddings.json
+[2025-06-22 23:34:08,343] INFO embedding_preparer:46 - Processing: data\cleaned_text\A000062-datasheet_chunk8.txt
+[2025-06-22 23:34:08,531] INFO embedding_preparer:85 - Saved embedding: data\embeddings\A000062-datasheet_chunk8_embeddings.json
+[2025-06-22 23:34:08,533] INFO embedding_preparer:46 - Processing: data\cleaned_text\A000062-datasheet_chunk9.txt
+[2025-06-22 23:34:08,704] INFO embedding_preparer:85 - Saved embedding: data\embeddings\A000062-datasheet_chunk9_embeddings.json
+[2025-06-22 23:34:08,706] INFO embedding_preparer:46 - Processing: data\cleaned_text\A000062-datasheet_cleaned.txt
+[2025-06-22 23:34:08,965] INFO embedding_preparer:85 - Saved embedding: data\embeddings\A000062-datasheet_cleaned_embeddings.json
+[2025-06-22 23:34:08,967] INFO embedding_preparer:46 - Processing: data\cleaned_text\ABX00030-datasheet_chunk1.txt
+[2025-06-22 23:34:09,142] INFO embedding_preparer:85 - Saved embedding: data\embeddings\ABX00030-datasheet_chunk1_embeddings.json
+[2025-06-22 23:34:09,143] INFO embedding_preparer:46 - Processing: data\cleaned_text\ABX00030-datasheet_chunk10.txt
+[2025-06-22 23:34:09,322] INFO embedding_preparer:85 - Saved embedding: data\embeddings\ABX00030-datasheet_chunk10_embeddings.json
+[2025-06-22 23:34:09,323] INFO embedding_preparer:46 - Processing: data\cleaned_text\ABX00030-datasheet_chunk11.txt
+[2025-06-22 23:34:09,494] INFO embedding_preparer:85 - Saved embedding: data\embeddings\ABX00030-datasheet_chunk11_embeddings.json
+[2025-06-22 23:34:09,496] INFO embedding_preparer:46 - Processing: data\cleaned_text\ABX00030-datasheet_chunk12.txt
+[2025-06-22 23:34:09,644] INFO embedding_preparer:85 - Saved embedding: data\embeddings\ABX00030-datasheet_chunk12_embeddings.json
+[2025-06-22 23:34:09,657] INFO embedding_preparer:46 - Processing: data\cleaned_text\ABX00030-datasheet_chunk13.txt
+[2025-06-22 23:34:09,811] INFO embedding_preparer:85 - Saved embedding: data\embeddings\ABX00030-datasheet_chunk13_embeddings.json
+[2025-06-22 23:34:09,813] INFO embedding_preparer:46 - Processing: data\cleaned_text\ABX00030-datasheet_chunk14.txt
+[2025-06-22 23:34:09,964] INFO embedding_preparer:85 - Saved embedding: data\embeddings\ABX00030-datasheet_chunk14_embeddings.json
+[2025-06-22 23:34:09,965] INFO embedding_preparer:46 - Processing: data\cleaned_text\ABX00030-datasheet_chunk15.txt
+[2025-06-22 23:34:10,128] INFO embedding_preparer:85 - Saved embedding: data\embeddings\ABX00030-datasheet_chunk15_embeddings.json
+[2025-06-22 23:34:10,130] INFO embedding_preparer:46 - Processing: data\cleaned_text\ABX00030-datasheet_chunk16.txt
+[2025-06-22 23:34:10,297] INFO embedding_preparer:85 - Saved embedding: data\embeddings\ABX00030-datasheet_chunk16_embeddings.json
+[2025-06-22 23:34:10,300] INFO embedding_preparer:46 - Processing: data\cleaned_text\ABX00030-datasheet_chunk17.txt
+[2025-06-22 23:34:10,375] INFO embedding_preparer:85 - Saved embedding: data\embeddings\ABX00030-datasheet_chunk17_embeddings.json
+[2025-06-22 23:34:10,376] INFO embedding_preparer:46 - Processing: data\cleaned_text\ABX00030-datasheet_chunk2.txt
+[2025-06-22 23:34:10,553] INFO embedding_preparer:85 - Saved embedding: data\embeddings\ABX00030-datasheet_chunk2_embeddings.json
+[2025-06-22 23:34:10,556] INFO embedding_preparer:46 - Processing: data\cleaned_text\ABX00030-datasheet_chunk3.txt
+[2025-06-22 23:34:10,758] INFO embedding_preparer:85 - Saved embedding: data\embeddings\ABX00030-datasheet_chunk3_embeddings.json
+[2025-06-22 23:34:10,759] INFO embedding_preparer:46 - Processing: data\cleaned_text\ABX00030-datasheet_chunk4.txt
+[2025-06-22 23:34:10,941] INFO embedding_preparer:85 - Saved embedding: data\embeddings\ABX00030-datasheet_chunk4_embeddings.json
+[2025-06-22 23:34:10,942] INFO embedding_preparer:46 - Processing: data\cleaned_text\ABX00030-datasheet_chunk5.txt
+[2025-06-22 23:34:11,113] INFO embedding_preparer:85 - Saved embedding: data\embeddings\ABX00030-datasheet_chunk5_embeddings.json
+[2025-06-22 23:34:11,115] INFO embedding_preparer:46 - Processing: data\cleaned_text\ABX00030-datasheet_chunk6.txt
+[2025-06-22 23:34:11,287] INFO embedding_preparer:85 - Saved embedding: data\embeddings\ABX00030-datasheet_chunk6_embeddings.json
+[2025-06-22 23:34:11,288] INFO embedding_preparer:46 - Processing: data\cleaned_text\ABX00030-datasheet_chunk7.txt
+[2025-06-22 23:34:11,446] INFO embedding_preparer:85 - Saved embedding: data\embeddings\ABX00030-datasheet_chunk7_embeddings.json
+[2025-06-22 23:34:11,448] INFO embedding_preparer:46 - Processing: data\cleaned_text\ABX00030-datasheet_chunk8.txt
+[2025-06-22 23:34:11,604] INFO embedding_preparer:85 - Saved embedding: data\embeddings\ABX00030-datasheet_chunk8_embeddings.json
+[2025-06-22 23:34:11,606] INFO embedding_preparer:46 - Processing: data\cleaned_text\ABX00030-datasheet_chunk9.txt
+[2025-06-22 23:34:11,751] INFO embedding_preparer:85 - Saved embedding: data\embeddings\ABX00030-datasheet_chunk9_embeddings.json
+[2025-06-22 23:34:11,753] INFO embedding_preparer:46 - Processing: data\cleaned_text\ABX00030-datasheet_cleaned.txt
+[2025-06-22 23:34:11,937] INFO embedding_preparer:85 - Saved embedding: data\embeddings\ABX00030-datasheet_cleaned_embeddings.json
+[2025-06-22 23:34:11,940] INFO embedding_preparer:46 - Processing: data\cleaned_text\ABX00080-datasheet_chunk1.txt
+[2025-06-22 23:34:12,113] INFO embedding_preparer:85 - Saved embedding: data\embeddings\ABX00080-datasheet_chunk1_embeddings.json
+[2025-06-22 23:34:12,115] INFO embedding_preparer:46 - Processing: data\cleaned_text\ABX00080-datasheet_chunk10.txt
+[2025-06-22 23:34:12,301] INFO embedding_preparer:85 - Saved embedding: data\embeddings\ABX00080-datasheet_chunk10_embeddings.json
+[2025-06-22 23:34:12,304] INFO embedding_preparer:46 - Processing: data\cleaned_text\ABX00080-datasheet_chunk11.txt
+[2025-06-22 23:34:12,554] INFO embedding_preparer:85 - Saved embedding: data\embeddings\ABX00080-datasheet_chunk11_embeddings.json
+[2025-06-22 23:34:12,557] INFO embedding_preparer:46 - Processing: data\cleaned_text\ABX00080-datasheet_chunk12.txt
+[2025-06-22 23:34:12,744] INFO embedding_preparer:85 - Saved embedding: data\embeddings\ABX00080-datasheet_chunk12_embeddings.json
+[2025-06-22 23:34:12,746] INFO embedding_preparer:46 - Processing: data\cleaned_text\ABX00080-datasheet_chunk13.txt
+[2025-06-22 23:34:12,901] INFO embedding_preparer:85 - Saved embedding: data\embeddings\ABX00080-datasheet_chunk13_embeddings.json
+[2025-06-22 23:34:12,913] INFO embedding_preparer:46 - Processing: data\cleaned_text\ABX00080-datasheet_chunk14.txt
+[2025-06-22 23:34:13,058] INFO embedding_preparer:85 - Saved embedding: data\embeddings\ABX00080-datasheet_chunk14_embeddings.json
+[2025-06-22 23:34:13,060] INFO embedding_preparer:46 - Processing: data\cleaned_text\ABX00080-datasheet_chunk15.txt
+[2025-06-22 23:34:13,215] INFO embedding_preparer:85 - Saved embedding: data\embeddings\ABX00080-datasheet_chunk15_embeddings.json
+[2025-06-22 23:34:13,217] INFO embedding_preparer:46 - Processing: data\cleaned_text\ABX00080-datasheet_chunk16.txt
+[2025-06-22 23:34:13,368] INFO embedding_preparer:85 - Saved embedding: data\embeddings\ABX00080-datasheet_chunk16_embeddings.json
+[2025-06-22 23:34:13,369] INFO embedding_preparer:46 - Processing: data\cleaned_text\ABX00080-datasheet_chunk17.txt
+[2025-06-22 23:34:13,544] INFO embedding_preparer:85 - Saved embedding: data\embeddings\ABX00080-datasheet_chunk17_embeddings.json
+[2025-06-22 23:34:13,546] INFO embedding_preparer:46 - Processing: data\cleaned_text\ABX00080-datasheet_chunk18.txt
+[2025-06-22 23:34:13,717] INFO embedding_preparer:85 - Saved embedding: data\embeddings\ABX00080-datasheet_chunk18_embeddings.json
+[2025-06-22 23:34:13,720] INFO embedding_preparer:46 - Processing: data\cleaned_text\ABX00080-datasheet_chunk19.txt
+[2025-06-22 23:34:13,936] INFO embedding_preparer:85 - Saved embedding: data\embeddings\ABX00080-datasheet_chunk19_embeddings.json
+[2025-06-22 23:34:13,938] INFO embedding_preparer:46 - Processing: data\cleaned_text\ABX00080-datasheet_chunk2.txt
+[2025-06-22 23:34:14,129] INFO embedding_preparer:85 - Saved embedding: data\embeddings\ABX00080-datasheet_chunk2_embeddings.json
+[2025-06-22 23:34:14,131] INFO embedding_preparer:46 - Processing: data\cleaned_text\ABX00080-datasheet_chunk20.txt
+[2025-06-22 23:34:14,307] INFO embedding_preparer:85 - Saved embedding: data\embeddings\ABX00080-datasheet_chunk20_embeddings.json
+[2025-06-22 23:34:14,310] INFO embedding_preparer:46 - Processing: data\cleaned_text\ABX00080-datasheet_chunk21.txt
+[2025-06-22 23:34:14,466] INFO embedding_preparer:85 - Saved embedding: data\embeddings\ABX00080-datasheet_chunk21_embeddings.json
+[2025-06-22 23:34:14,468] INFO embedding_preparer:46 - Processing: data\cleaned_text\ABX00080-datasheet_chunk22.txt
+[2025-06-22 23:34:14,637] INFO embedding_preparer:85 - Saved embedding: data\embeddings\ABX00080-datasheet_chunk22_embeddings.json
+[2025-06-22 23:34:14,640] INFO embedding_preparer:46 - Processing: data\cleaned_text\ABX00080-datasheet_chunk23.txt
+[2025-06-22 23:34:14,802] INFO embedding_preparer:85 - Saved embedding: data\embeddings\ABX00080-datasheet_chunk23_embeddings.json
+[2025-06-22 23:34:14,804] INFO embedding_preparer:46 - Processing: data\cleaned_text\ABX00080-datasheet_chunk24.txt
+[2025-06-22 23:34:14,984] INFO embedding_preparer:85 - Saved embedding: data\embeddings\ABX00080-datasheet_chunk24_embeddings.json
+[2025-06-22 23:34:14,988] INFO embedding_preparer:46 - Processing: data\cleaned_text\ABX00080-datasheet_chunk25.txt
+[2025-06-22 23:34:15,175] INFO embedding_preparer:85 - Saved embedding: data\embeddings\ABX00080-datasheet_chunk25_embeddings.json
+[2025-06-22 23:34:15,177] INFO embedding_preparer:46 - Processing: data\cleaned_text\ABX00080-datasheet_chunk26.txt
+[2025-06-22 23:34:15,337] INFO embedding_preparer:85 - Saved embedding: data\embeddings\ABX00080-datasheet_chunk26_embeddings.json
+[2025-06-22 23:34:15,339] INFO embedding_preparer:46 - Processing: data\cleaned_text\ABX00080-datasheet_chunk27.txt
+[2025-06-22 23:34:15,458] INFO embedding_preparer:85 - Saved embedding: data\embeddings\ABX00080-datasheet_chunk27_embeddings.json
+[2025-06-22 23:34:15,461] INFO embedding_preparer:46 - Processing: data\cleaned_text\ABX00080-datasheet_chunk28.txt
+[2025-06-22 23:34:15,507] INFO embedding_preparer:85 - Saved embedding: data\embeddings\ABX00080-datasheet_chunk28_embeddings.json
+[2025-06-22 23:34:15,516] INFO embedding_preparer:46 - Processing: data\cleaned_text\ABX00080-datasheet_chunk3.txt
+[2025-06-22 23:34:15,724] INFO embedding_preparer:85 - Saved embedding: data\embeddings\ABX00080-datasheet_chunk3_embeddings.json
+[2025-06-22 23:34:15,728] INFO embedding_preparer:46 - Processing: data\cleaned_text\ABX00080-datasheet_chunk4.txt
+[2025-06-22 23:34:15,898] INFO embedding_preparer:85 - Saved embedding: data\embeddings\ABX00080-datasheet_chunk4_embeddings.json
+[2025-06-22 23:34:15,910] INFO embedding_preparer:46 - Processing: data\cleaned_text\ABX00080-datasheet_chunk5.txt
+[2025-06-22 23:34:16,082] INFO embedding_preparer:85 - Saved embedding: data\embeddings\ABX00080-datasheet_chunk5_embeddings.json
+[2025-06-22 23:34:16,085] INFO embedding_preparer:46 - Processing: data\cleaned_text\ABX00080-datasheet_chunk6.txt
+[2025-06-22 23:34:16,262] INFO embedding_preparer:85 - Saved embedding: data\embeddings\ABX00080-datasheet_chunk6_embeddings.json
+[2025-06-22 23:34:16,263] INFO embedding_preparer:46 - Processing: data\cleaned_text\ABX00080-datasheet_chunk7.txt
+[2025-06-22 23:34:16,420] INFO embedding_preparer:85 - Saved embedding: data\embeddings\ABX00080-datasheet_chunk7_embeddings.json
+[2025-06-22 23:34:16,423] INFO embedding_preparer:46 - Processing: data\cleaned_text\ABX00080-datasheet_chunk8.txt
+[2025-06-22 23:34:16,593] INFO embedding_preparer:85 - Saved embedding: data\embeddings\ABX00080-datasheet_chunk8_embeddings.json
+[2025-06-22 23:34:16,595] INFO embedding_preparer:46 - Processing: data\cleaned_text\ABX00080-datasheet_chunk9.txt
+[2025-06-22 23:34:16,747] INFO embedding_preparer:85 - Saved embedding: data\embeddings\ABX00080-datasheet_chunk9_embeddings.json
+[2025-06-22 23:34:16,749] INFO embedding_preparer:46 - Processing: data\cleaned_text\ABX00080-datasheet_cleaned.txt
+[2025-06-22 23:34:16,938] INFO embedding_preparer:85 - Saved embedding: data\embeddings\ABX00080-datasheet_cleaned_embeddings.json
+[2025-06-22 23:34:16,940] INFO embedding_preparer:46 - Processing: data\cleaned_text\ATMEGA2560_chunk1.txt
+[2025-06-22 23:34:17,099] INFO embedding_preparer:85 - Saved embedding: data\embeddings\ATMEGA2560_chunk1_embeddings.json
+[2025-06-22 23:34:17,101] INFO embedding_preparer:46 - Processing: data\cleaned_text\ATMEGA2560_chunk10.txt
+[2025-06-22 23:34:17,258] INFO embedding_preparer:85 - Saved embedding: data\embeddings\ATMEGA2560_chunk10_embeddings.json
+[2025-06-22 23:34:17,260] INFO embedding_preparer:46 - Processing: data\cleaned_text\ATMEGA2560_chunk11.txt
+[2025-06-22 23:34:17,421] INFO embedding_preparer:85 - Saved embedding: data\embeddings\ATMEGA2560_chunk11_embeddings.json
+[2025-06-22 23:34:17,423] INFO embedding_preparer:46 - Processing: data\cleaned_text\ATMEGA2560_chunk12.txt
+[2025-06-22 23:34:17,577] INFO embedding_preparer:85 - Saved embedding: data\embeddings\ATMEGA2560_chunk12_embeddings.json
+[2025-06-22 23:34:17,579] INFO embedding_preparer:46 - Processing: data\cleaned_text\ATMEGA2560_chunk13.txt
+[2025-06-22 23:34:17,744] INFO embedding_preparer:85 - Saved embedding: data\embeddings\ATMEGA2560_chunk13_embeddings.json
+[2025-06-22 23:34:17,746] INFO embedding_preparer:46 - Processing: data\cleaned_text\ATMEGA2560_chunk14.txt
+[2025-06-22 23:34:17,940] INFO embedding_preparer:85 - Saved embedding: data\embeddings\ATMEGA2560_chunk14_embeddings.json
+[2025-06-22 23:34:17,943] INFO embedding_preparer:46 - Processing: data\cleaned_text\ATMEGA2560_chunk15.txt
+[2025-06-22 23:34:18,114] INFO embedding_preparer:85 - Saved embedding: data\embeddings\ATMEGA2560_chunk15_embeddings.json
+[2025-06-22 23:34:18,116] INFO embedding_preparer:46 - Processing: data\cleaned_text\ATMEGA2560_chunk16.txt
+[2025-06-22 23:34:18,274] INFO embedding_preparer:85 - Saved embedding: data\embeddings\ATMEGA2560_chunk16_embeddings.json
+[2025-06-22 23:34:18,277] INFO embedding_preparer:46 - Processing: data\cleaned_text\ATMEGA2560_chunk17.txt
+[2025-06-22 23:34:18,422] INFO embedding_preparer:85 - Saved embedding: data\embeddings\ATMEGA2560_chunk17_embeddings.json
+[2025-06-22 23:34:18,424] INFO embedding_preparer:46 - Processing: data\cleaned_text\ATMEGA2560_chunk18.txt
+[2025-06-22 23:34:18,588] INFO embedding_preparer:85 - Saved embedding: data\embeddings\ATMEGA2560_chunk18_embeddings.json
+[2025-06-22 23:34:18,590] INFO embedding_preparer:46 - Processing: data\cleaned_text\ATMEGA2560_chunk19.txt
+[2025-06-22 23:34:18,739] INFO embedding_preparer:85 - Saved embedding: data\embeddings\ATMEGA2560_chunk19_embeddings.json
+[2025-06-22 23:34:18,741] INFO embedding_preparer:46 - Processing: data\cleaned_text\ATMEGA2560_chunk2.txt
+[2025-06-22 23:34:18,909] INFO embedding_preparer:85 - Saved embedding: data\embeddings\ATMEGA2560_chunk2_embeddings.json
+[2025-06-22 23:34:18,910] INFO embedding_preparer:46 - Processing: data\cleaned_text\ATMEGA2560_chunk20.txt
+[2025-06-22 23:34:19,049] INFO embedding_preparer:85 - Saved embedding: data\embeddings\ATMEGA2560_chunk20_embeddings.json
+[2025-06-22 23:34:19,051] INFO embedding_preparer:46 - Processing: data\cleaned_text\ATMEGA2560_chunk21.txt
+[2025-06-22 23:34:19,201] INFO embedding_preparer:85 - Saved embedding: data\embeddings\ATMEGA2560_chunk21_embeddings.json
+[2025-06-22 23:34:19,203] INFO embedding_preparer:46 - Processing: data\cleaned_text\ATMEGA2560_chunk22.txt
+[2025-06-22 23:34:19,355] INFO embedding_preparer:85 - Saved embedding: data\embeddings\ATMEGA2560_chunk22_embeddings.json
+[2025-06-22 23:34:19,357] INFO embedding_preparer:46 - Processing: data\cleaned_text\ATMEGA2560_chunk23.txt
+[2025-06-22 23:34:19,504] INFO embedding_preparer:85 - Saved embedding: data\embeddings\ATMEGA2560_chunk23_embeddings.json
+[2025-06-22 23:34:19,506] INFO embedding_preparer:46 - Processing: data\cleaned_text\ATMEGA2560_chunk24.txt
+[2025-06-22 23:34:19,661] INFO embedding_preparer:85 - Saved embedding: data\embeddings\ATMEGA2560_chunk24_embeddings.json
+[2025-06-22 23:34:19,663] INFO embedding_preparer:46 - Processing: data\cleaned_text\ATMEGA2560_chunk25.txt
+[2025-06-22 23:34:19,811] INFO embedding_preparer:85 - Saved embedding: data\embeddings\ATMEGA2560_chunk25_embeddings.json
+[2025-06-22 23:34:19,813] INFO embedding_preparer:46 - Processing: data\cleaned_text\ATMEGA2560_chunk26.txt
+[2025-06-22 23:34:19,918] INFO embedding_preparer:85 - Saved embedding: data\embeddings\ATMEGA2560_chunk26_embeddings.json
+[2025-06-22 23:34:19,920] INFO embedding_preparer:46 - Processing: data\cleaned_text\ATMEGA2560_chunk27.txt
+[2025-06-22 23:34:19,956] INFO embedding_preparer:85 - Saved embedding: data\embeddings\ATMEGA2560_chunk27_embeddings.json
+[2025-06-22 23:34:19,958] INFO embedding_preparer:46 - Processing: data\cleaned_text\ATMEGA2560_chunk3.txt
+[2025-06-22 23:34:20,108] INFO embedding_preparer:85 - Saved embedding: data\embeddings\ATMEGA2560_chunk3_embeddings.json
+[2025-06-22 23:34:20,110] INFO embedding_preparer:46 - Processing: data\cleaned_text\ATMEGA2560_chunk4.txt
+[2025-06-22 23:34:20,264] INFO embedding_preparer:85 - Saved embedding: data\embeddings\ATMEGA2560_chunk4_embeddings.json
+[2025-06-22 23:34:20,267] INFO embedding_preparer:46 - Processing: data\cleaned_text\ATMEGA2560_chunk5.txt
+[2025-06-22 23:34:20,410] INFO embedding_preparer:85 - Saved embedding: data\embeddings\ATMEGA2560_chunk5_embeddings.json
+[2025-06-22 23:34:20,412] INFO embedding_preparer:46 - Processing: data\cleaned_text\ATMEGA2560_chunk6.txt
+[2025-06-22 23:34:20,564] INFO embedding_preparer:85 - Saved embedding: data\embeddings\ATMEGA2560_chunk6_embeddings.json
+[2025-06-22 23:34:20,566] INFO embedding_preparer:46 - Processing: data\cleaned_text\ATMEGA2560_chunk7.txt
+[2025-06-22 23:34:20,713] INFO embedding_preparer:85 - Saved embedding: data\embeddings\ATMEGA2560_chunk7_embeddings.json
+[2025-06-22 23:34:20,714] INFO embedding_preparer:46 - Processing: data\cleaned_text\ATMEGA2560_chunk8.txt
+[2025-06-22 23:34:20,858] INFO embedding_preparer:85 - Saved embedding: data\embeddings\ATMEGA2560_chunk8_embeddings.json
+[2025-06-22 23:34:20,860] INFO embedding_preparer:46 - Processing: data\cleaned_text\ATMEGA2560_chunk9.txt
+[2025-06-22 23:34:21,009] INFO embedding_preparer:85 - Saved embedding: data\embeddings\ATMEGA2560_chunk9_embeddings.json
+[2025-06-22 23:34:21,011] INFO embedding_preparer:46 - Processing: data\cleaned_text\ATMEGA2560_cleaned.txt
+[2025-06-22 23:34:21,189] INFO embedding_preparer:85 - Saved embedding: data\embeddings\ATMEGA2560_cleaned_embeddings.json
+[2025-06-22 23:34:21,191] INFO embedding_preparer:46 - Processing: data\cleaned_text\ATMEGA328P_chunk1.txt
+[2025-06-22 23:34:21,254] INFO embedding_preparer:85 - Saved embedding: data\embeddings\ATMEGA328P_chunk1_embeddings.json
+[2025-06-22 23:34:21,256] INFO embedding_preparer:46 - Processing: data\cleaned_text\ATMEGA328P_cleaned.txt
+[2025-06-22 23:34:21,315] INFO embedding_preparer:85 - Saved embedding: data\embeddings\ATMEGA328P_cleaned_embeddings.json
+[2025-06-22 23:34:21,316] INFO embedding_preparer:46 - Processing: data\cleaned_text\ESP32_chunk1.txt
+[2025-06-22 23:34:21,372] INFO embedding_preparer:85 - Saved embedding: data\embeddings\ESP32_chunk1_embeddings.json
+[2025-06-22 23:34:21,374] INFO embedding_preparer:46 - Processing: data\cleaned_text\ESP32_cleaned.txt
+[2025-06-22 23:34:21,429] INFO embedding_preparer:85 - Saved embedding: data\embeddings\ESP32_cleaned_embeddings.json
+[2025-06-22 23:34:21,431] INFO embedding_preparer:46 - Processing: data\cleaned_text\RP2040_chunk1.txt
+[2025-06-22 23:34:21,495] INFO embedding_preparer:85 - Saved embedding: data\embeddings\RP2040_chunk1_embeddings.json
+[2025-06-22 23:34:21,497] INFO embedding_preparer:46 - Processing: data\cleaned_text\RP2040_cleaned.txt
+[2025-06-22 23:34:21,561] INFO embedding_preparer:85 - Saved embedding: data\embeddings\RP2040_cleaned_embeddings.json
+[2025-06-22 23:34:21,563] INFO main:88 - [Step 02] Embedding generation completed.
+[2025-06-22 23:34:21,583] INFO main:257 - RAG pipeline done

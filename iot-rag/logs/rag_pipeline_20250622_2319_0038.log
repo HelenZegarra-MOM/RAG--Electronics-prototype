@@ -1,0 +1,30 @@
+[2025-06-22 23:19:00,383] INFO main:231 - ------ Command line arguments -------
+[2025-06-22 23:19:00,384] INFO main:232 - step                : step04_retrieve_chunks
+[2025-06-22 23:19:00,384] INFO main:233 - input_filename      : None
+[2025-06-22 23:19:00,384] INFO main:234 - query_args          : Does the Arduino Nano 33 BLE support 5V?
+[2025-06-22 23:19:00,384] INFO main:235 - use_rag             : False
+[2025-06-22 23:19:00,384] INFO main:236 - ------ Config Settings -------
+[2025-06-22 23:19:00,384] INFO main:238 - cleaned_text_directory        : data/cleaned_text
+[2025-06-22 23:19:00,384] INFO main:238 - collection_name               : collections
+[2025-06-22 23:19:00,385] INFO main:238 - embedding_model_name          : sentence-transformers/all-MiniLM-L6-v2
+[2025-06-22 23:19:00,385] INFO main:238 - embeddings_directory          : data/embeddings
+[2025-06-22 23:19:00,385] INFO main:238 - llm_api_url                   : http://127.0.0.1:1234
+[2025-06-22 23:19:00,385] INFO main:238 - llm_model_name                : llama-3.2-1b-instruct
+[2025-06-22 23:19:00,385] INFO main:238 - log_level                     : DEBUG
+[2025-06-22 23:19:00,385] INFO main:238 - raw_input_directory           : data/raw_input
+[2025-06-22 23:19:00,385] INFO main:238 - retriever_min_score_threshold : 0.2
+[2025-06-22 23:19:00,385] INFO main:238 - vectordb_directory            : data/vectordb
+[2025-06-22 23:19:00,385] INFO main:239 - ------------------------------
+[2025-06-22 23:19:00,386] INFO main:56 - Ensured directory exists: data\raw_input
+[2025-06-22 23:19:00,386] INFO main:56 - Ensured directory exists: data\cleaned_text
+[2025-06-22 23:19:00,387] INFO main:56 - Ensured directory exists: data\embeddings
+[2025-06-22 23:19:00,387] INFO main:56 - Ensured directory exists: data\vectordb
+[2025-06-22 23:19:00,387] INFO main:116 - [Step 04] Retrieval started.
+[2025-06-22 23:19:00,387] INFO main:117 - Query arguments: Does the Arduino Nano 33 BLE support 5V?
+[2025-06-22 23:19:00,410] INFO posthog:22 - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[2025-06-22 23:19:00,498] INFO SentenceTransformer:211 - Use pytorch device_name: cpu
+[2025-06-22 23:19:00,499] INFO SentenceTransformer:219 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+[2025-06-22 23:19:08,294] INFO chromadb_retriever:22 - Initialized ChromaDBRetriever: embedding_model_name: sentence-transformers/all-MiniLM-L6-v2, collection_name: collections, score_threshold: 0.2
+[2025-06-22 23:19:08,366] INFO main:132 - *** No relevant documents found.
+[2025-06-22 23:19:08,366] INFO main:158 - [Step 04] Retrieval completed.
+[2025-06-22 23:19:08,366] INFO main:257 - RAG pipeline done

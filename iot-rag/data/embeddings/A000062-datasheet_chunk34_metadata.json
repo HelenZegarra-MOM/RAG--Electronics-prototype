@@ -1,0 +1,1 @@
+{"source_file": "A000062-datasheet_chunk34.txt", "text_preview": "##a1 gpio 20 / i2c 1 3 aref 4 gnd 5 d13 / sck gpio 13 / spi ( pwm ~ ) 6 d12 / cipo gpio 12 / spi ( pwm ~ ) 7 d11 / copi gpio 11 / spi ( pwm ~ ) 8 d10 / cs gpio 10 / spi ( pwm ~ ) 9 d9 / sda2 gpio 9 / i2c 2 ( pwm ~ ) 10 d8 / scl2 gpio 8 / i2c 2 ( pwm ~ ) 11 d7 gpio 7 ( pwm ~ ) 12 d6 gpio 6 ( pwm ~ ) "}

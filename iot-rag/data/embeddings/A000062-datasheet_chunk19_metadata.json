@@ -1,0 +1,1 @@
+{"source_file": "A000062-datasheet_chunk19.txt", "text_preview": ". pin function type description 1 d21 / scl1 digital gpio 21 / i2c 1 clock 2 d20 / sda1 digital gpio 20 / i2c 1 dataline 3 aref digital analog reference voltage 4 gnd power ground 5 d13 / sck digital gpio 13 / spi clock ( pwm ~ ) 6 d12 / cipo digital gpio 12 / spi controller in peripheral out ( pwm "}

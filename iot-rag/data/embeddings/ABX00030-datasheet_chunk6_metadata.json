@@ -1,0 +1,1 @@
+{"source_file": "ABX00030-datasheet_chunk6.txt", "text_preview": "a4 and a5 have an internal pull up and default to be used as an i2c bus so usage as analog inputs is not recommended. 2. 3 power tree the board can be powered via usb connector, vin or vusb pins on headers. power tree note : since vusb feeds vin via a schottky diode and a dc - dc regulator specified"}

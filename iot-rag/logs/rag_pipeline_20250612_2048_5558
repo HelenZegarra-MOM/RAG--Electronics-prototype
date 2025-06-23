@@ -1,0 +1,38 @@
+[2025-06-12 20:48:55,591] INFO main:192 - ------ Command line arguments -------
+[2025-06-12 20:48:55,592] INFO main:193 - step                                              : step03_store_vectors
+[2025-06-12 20:48:55,593] INFO main:194 - input_filename                                    : all
+[2025-06-12 20:48:55,601] INFO main:195 - query_args                                        : None
+[2025-06-12 20:48:55,602] INFO main:196 - use_rag                                           : False
+[2025-06-12 20:48:55,602] INFO main:197 - ------ Config Settings -------
+[2025-06-12 20:48:55,603] INFO main:199 - cleaned_text_directory                            : data/cleaned_text
+[2025-06-12 20:48:55,604] INFO main:199 - collection_name                                   : collections
+[2025-06-12 20:48:55,605] INFO main:199 - embedding_model_name                              : sentence-transformers/all-MiniLM-L6-v2
+[2025-06-12 20:48:55,605] INFO main:199 - embeddings_directory                              : data/embeddings
+[2025-06-12 20:48:55,606] INFO main:199 - llm_api_url                                       : http://localhost:1234/v1/completions
+[2025-06-12 20:48:55,606] INFO main:199 - llm_model_name                                    : llama-3.2-1b-instruct
+[2025-06-12 20:48:55,607] INFO main:199 - log_level                                         : debug
+[2025-06-12 20:48:55,607] INFO main:199 - raw_input_directory                               : data/raw_input
+[2025-06-12 20:48:55,608] INFO main:199 - retriever_min_score_threshold                     : 0.5
+[2025-06-12 20:48:55,609] INFO main:199 - vectordb_directory                                : data/vectordb
+[2025-06-12 20:48:55,609] INFO main:200 - ------------------------------
+[2025-06-12 20:48:55,610] INFO main:46 - Ensured directory exists: data\raw_input
+[2025-06-12 20:48:55,612] INFO main:46 - Ensured directory exists: data\cleaned_text
+[2025-06-12 20:48:55,614] INFO main:46 - Ensured directory exists: data\embeddings
+[2025-06-12 20:48:55,615] INFO main:46 - Ensured directory exists: data\vectordb
+[2025-06-12 20:48:55,615] INFO main:78 - [Step 03] Vector storage started.
+[2025-06-12 20:48:55,616] INFO main:82 - deleting existing vectordb
+[2025-06-12 20:48:55,680] INFO posthog:22 - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[2025-06-12 20:49:00,411] INFO embedding_loader:74 - Storing Beyond the Spreadsheets_ Quality Project Management_cleaned.txt in ChromaDB...
+[2025-06-12 20:49:00,473] INFO embedding_loader:82 - Stored Beyond the Spreadsheets_ Quality Project Management_cleaned.txt successfully.
+[2025-06-12 20:49:00,476] INFO embedding_loader:74 - Storing Creating Business Domain Concepts in Regional Projects_ In the Case of Japan-1 (1)_cleaned.txt in ChromaDB...
+[2025-06-12 20:49:00,491] INFO embedding_loader:82 - Stored Creating Business Domain Concepts in Regional Projects_ In the Case of Japan-1 (1)_cleaned.txt successfully.
+[2025-06-12 20:49:00,492] INFO embedding_loader:74 - Storing Creating Business Domain Concepts in Regional Projects_ In the Case of Japan-1_cleaned.txt in ChromaDB...
+[2025-06-12 20:49:00,506] INFO embedding_loader:82 - Stored Creating Business Domain Concepts in Regional Projects_ In the Case of Japan-1_cleaned.txt successfully.
+[2025-06-12 20:49:00,509] INFO embedding_loader:74 - Storing Creating Business Domain Concepts in Regional Projects_ In the Case of Japan_cleaned.txt in ChromaDB...
+[2025-06-12 20:49:00,522] INFO embedding_loader:82 - Stored Creating Business Domain Concepts in Regional Projects_ In the Case of Japan_cleaned.txt successfully.
+[2025-06-12 20:49:00,523] INFO embedding_loader:74 - Storing On Stupidity in Project Management_cleaned.txt in ChromaDB...
+[2025-06-12 20:49:00,537] INFO embedding_loader:82 - Stored On Stupidity in Project Management_cleaned.txt successfully.
+[2025-06-12 20:49:00,538] INFO embedding_loader:74 - Storing Seven Failure Points When Engineering a Retrieval Augmented Generation System_cleaned.txt in ChromaDB...
+[2025-06-12 20:49:00,552] INFO embedding_loader:82 - Stored Seven Failure Points When Engineering a Retrieval Augmented Generation System_cleaned.txt successfully.
+[2025-06-12 20:49:00,552] INFO main:93 - [Step 03] Vector storage completed.
+[2025-06-12 20:49:00,552] INFO main:213 - RAG pipeline done

@@ -1,0 +1,65 @@
+[2025-06-23 07:22:23,921] INFO main:195 - Running step: step05_generate_response
+[2025-06-23 07:22:23,921] INFO main:196 - Input file: None
+[2025-06-23 07:22:23,923] INFO main:197 - Query: What is the operating temperature of the ATMEGA2560?
+[2025-06-23 07:22:23,923] INFO main:198 - Config loaded from: config.json
+[2025-06-23 07:22:23,924] INFO main:47 - Ensured directory exists: data\raw_input
+[2025-06-23 07:22:23,924] INFO main:47 - Ensured directory exists: data\cleaned_text
+[2025-06-23 07:22:23,925] INFO main:47 - Ensured directory exists: data\embeddings
+[2025-06-23 07:22:23,925] INFO main:47 - Ensured directory exists: data\vectordb
+[2025-06-23 07:22:23,925] INFO main:138 - [Step 05] Response generation started.
+[2025-06-23 07:22:23,926] INFO llm_client:16 - Initialized LLMClient | Endpoint: http://127.0.0.1:1234/v1/chat/completions | Model: llama-3.2-1b-instruct
+[2025-06-23 07:22:23,960] INFO posthog:22 - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[2025-06-23 07:22:24,059] DEBUG config:359 - Starting component System
+[2025-06-23 07:22:24,059] DEBUG config:359 - Starting component Posthog
+[2025-06-23 07:22:24,117] INFO SentenceTransformer:219 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+[2025-06-23 07:22:24,121] DEBUG connectionpool:1003 - Starting new HTTPS connection (1): huggingface.co:443
+[2025-06-23 07:22:24,608] DEBUG connectionpool:1003 - Starting new HTTPS connection (1): us.i.posthog.com:443
+[2025-06-23 07:22:24,632] DEBUG connectionpool:456 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 200 0
+[2025-06-23 07:22:24,790] DEBUG connectionpool:456 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 200 0
+[2025-06-23 07:22:25,006] DEBUG connectionpool:456 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 200 0
+[2025-06-23 07:22:25,158] DEBUG connectionpool:456 - https://us.i.posthog.com:443 "POST /batch/ HTTP/1.1" 200 15
+[2025-06-23 07:22:25,162] DEBUG connectionpool:456 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 200 0
+[2025-06-23 07:22:25,317] DEBUG connectionpool:456 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 200 0
+[2025-06-23 07:22:25,469] DEBUG connectionpool:456 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+[2025-06-23 07:22:25,632] DEBUG connectionpool:456 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 200 0
+[2025-06-23 07:22:27,252] DEBUG connectionpool:456 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+[2025-06-23 07:22:27,405] DEBUG connectionpool:456 - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+[2025-06-23 07:22:27,652] DEBUG connectionpool:456 - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/revision/main HTTP/1.1" 200 6863
+[2025-06-23 07:22:27,816] DEBUG connectionpool:456 - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/1.1" 200 6863
+[2025-06-23 07:22:27,860] INFO rag_query_processor:15 - Initialized RAGQueryProcessor | use_rag=True
+[2025-06-23 07:22:27,861] INFO rag_query_processor:22 - Processing query: What is the operating temperature of the ATMEGA2560?
+[2025-06-23 07:22:27,861] INFO rag_query_processor:27 - RAG enabled: retrieving relevant documents...
+[2025-06-23 07:22:27,862] INFO chromadb_retriever:18 - 🔍 Querying ChromaDB with: What is the operating temperature of the ATMEGA2560?
+[2025-06-23 07:22:28,005] DEBUG chromadb_retriever:34 - Accepted match: doc_ATMEGA2560 with score 2.5684
+[2025-06-23 07:22:28,005] INFO chromadb_retriever:39 - Retrieved 1 relevant document(s) after filtering.
+[2025-06-23 07:22:28,007] INFO rag_query_processor:42 - Top match | ID: doc_ATMEGA2560 | Score: 2.5683774948120117 | Source: ATMEGA2560.txt
+[2025-06-23 07:22:28,007] DEBUG rag_query_processor:43 - Context Preview: User Manual
+SKU: A000067
+Description
+Arduino Mega 2560 Rev3 is an exemplary development board dedicated for building extensive applications as
+compare...
+[2025-06-23 07:22:28,009] DEBUG connectionpool:228 - Starting new HTTP connection (1): 127.0.0.1:1234
+[2025-06-23 07:22:28,058] DEBUG connectionpool:456 - http://127.0.0.1:1234 "POST /v1/chat/completions HTTP/1.1" 400 246
+[2025-06-23 07:22:28,060] ERROR llm_client:62 - Connection error querying LLM: 400 Client Error: Bad Request for url: http://127.0.0.1:1234/v1/chat/completions
+[2025-06-23 07:22:28,060] DEBUG rag_query_processor:48 - LLM Response: Error: Could not connect to the LLM endpoint.
+[2025-06-23 07:22:28,060] INFO rag_query_processor:15 - Initialized RAGQueryProcessor | use_rag=False
+[2025-06-23 07:22:28,060] INFO rag_query_processor:22 - Processing query: What is the operating temperature of the ATMEGA2560?
+[2025-06-23 07:22:28,063] DEBUG connectionpool:228 - Starting new HTTP connection (1): 127.0.0.1:1234
+[2025-06-23 07:22:28,344] DEBUG connectionpool:456 - https://us.i.posthog.com:443 "POST /batch/ HTTP/1.1" 200 15
+[2025-06-23 07:22:33,510] DEBUG connectionpool:456 - http://127.0.0.1:1234 "POST /v1/chat/completions HTTP/1.1" 200 581
+[2025-06-23 07:22:33,511] DEBUG rag_query_processor:48 - LLM Response: The operating temperature range for the ATmega2560 microcontroller is 0°C to 85°C (32°F to 185°F).
+[2025-06-23 07:22:33,514] INFO SentenceTransformer:211 - Use pytorch device_name: cpu
+[2025-06-23 07:22:33,515] INFO SentenceTransformer:219 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+[2025-06-23 07:22:33,679] DEBUG connectionpool:456 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 200 0
+[2025-06-23 07:22:33,824] DEBUG connectionpool:456 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 200 0
+[2025-06-23 07:22:33,978] DEBUG connectionpool:456 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 200 0
+[2025-06-23 07:22:34,130] DEBUG connectionpool:456 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 200 0
+[2025-06-23 07:22:34,275] DEBUG connectionpool:456 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 200 0
+[2025-06-23 07:22:34,444] DEBUG connectionpool:456 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+[2025-06-23 07:22:34,594] DEBUG connectionpool:456 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 200 0
+[2025-06-23 07:22:34,797] DEBUG connectionpool:456 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+[2025-06-23 07:22:34,961] DEBUG connectionpool:456 - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+[2025-06-23 07:22:35,177] DEBUG connectionpool:456 - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/revision/main HTTP/1.1" 200 6863
+[2025-06-23 07:22:35,363] DEBUG connectionpool:456 - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/1.1" 200 6863
+[2025-06-23 07:22:35,416] INFO main:165 - [Step 05] Response generation comparison completed.
+[2025-06-23 07:22:35,416] INFO main:216 - RAG pipeline done

@@ -1,0 +1,36 @@
+[2025-06-23 06:47:12,373] INFO main:229 - ------ Command line arguments -------
+[2025-06-23 06:47:12,373] INFO main:230 - step                : step04_retrieve_chunks
+[2025-06-23 06:47:12,375] INFO main:231 - input_filename      : None
+[2025-06-23 06:47:12,375] INFO main:232 - query_args          : What is the operating temperature of the ATMEGA2560?
+[2025-06-23 06:47:12,375] INFO main:233 - use_rag             : False
+[2025-06-23 06:47:12,375] INFO main:234 - ------ Config Settings -------
+[2025-06-23 06:47:12,376] INFO main:236 - cleaned_text_directory        : data/cleaned_text
+[2025-06-23 06:47:12,385] INFO main:236 - collection_name               : collections
+[2025-06-23 06:47:12,386] INFO main:236 - embedding_model_name          : sentence-transformers/all-MiniLM-L6-v2
+[2025-06-23 06:47:12,386] INFO main:236 - embeddings_directory          : data/embeddings
+[2025-06-23 06:47:12,386] INFO main:236 - llm_api_url                   : http://127.0.0.1:1234
+[2025-06-23 06:47:12,386] INFO main:236 - llm_model_name                : llama-3.2-1b-instruct
+[2025-06-23 06:47:12,387] INFO main:236 - log_level                     : DEBUG
+[2025-06-23 06:47:12,387] INFO main:236 - raw_input_directory           : data/raw_input
+[2025-06-23 06:47:12,387] INFO main:236 - retriever_min_score_threshold : 3.5
+[2025-06-23 06:47:12,387] INFO main:236 - vectordb_directory            : data/vectordb
+[2025-06-23 06:47:12,388] INFO main:237 - ------------------------------
+[2025-06-23 06:47:12,389] INFO main:55 - Ensured directory exists: data\raw_input
+[2025-06-23 06:47:12,389] INFO main:55 - Ensured directory exists: data\cleaned_text
+[2025-06-23 06:47:12,390] INFO main:55 - Ensured directory exists: data\embeddings
+[2025-06-23 06:47:12,390] INFO main:55 - Ensured directory exists: data\vectordb
+[2025-06-23 06:47:12,391] INFO main:116 - [Step 04] Chunk retrieval started.
+[2025-06-23 06:47:12,393] INFO SentenceTransformer:211 - Use pytorch device_name: cpu
+[2025-06-23 06:47:12,394] INFO SentenceTransformer:219 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+[2025-06-23 06:47:16,972] INFO posthog:22 - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[2025-06-23 06:47:17,163] INFO chromadb_retriever:25 - 🔍 Querying ChromaDB with: What is the operating temperature of the ATMEGA2560?
+[2025-06-23 06:47:17,249] DEBUG chromadb_retriever:39 - Accepted match: ATMEGA2560.txt with score 2.5684
+[2025-06-23 06:47:17,249] INFO chromadb_retriever:49 - Retrieved 1 relevant document(s) after filtering.
+[2025-06-23 06:47:17,249] INFO main:138 - Result 1:
+[2025-06-23 06:47:17,249] INFO main:139 - ID: doc_0
+[2025-06-23 06:47:17,250] INFO main:140 - Score: 2.5683774948120117
+[2025-06-23 06:47:17,250] INFO main:141 - Source: ATMEGA2560.txt
+[2025-06-23 06:47:17,250] INFO main:142 - Document snippet: 
+[2025-06-23 06:47:17,250] INFO main:143 - --------------------------------------------------
+[2025-06-23 06:47:17,252] INFO main:155 - [Step 04] Retrieval completed.
+[2025-06-23 06:47:17,252] INFO main:255 - RAG pipeline done

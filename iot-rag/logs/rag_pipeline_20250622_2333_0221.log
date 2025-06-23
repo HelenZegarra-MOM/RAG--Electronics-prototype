@@ -1,0 +1,152 @@
+[2025-06-22 23:33:02,215] INFO main:231 - ------ Command line arguments -------
+[2025-06-22 23:33:02,215] INFO main:232 - step                : step01_ingest
+[2025-06-22 23:33:02,215] INFO main:233 - input_filename      : None
+[2025-06-22 23:33:02,215] INFO main:234 - query_args          : None
+[2025-06-22 23:33:02,216] INFO main:235 - use_rag             : False
+[2025-06-22 23:33:02,216] INFO main:236 - ------ Config Settings -------
+[2025-06-22 23:33:02,216] INFO main:238 - cleaned_text_directory        : data/cleaned_text
+[2025-06-22 23:33:02,216] INFO main:238 - collection_name               : collections
+[2025-06-22 23:33:02,226] INFO main:238 - embedding_model_name          : sentence-transformers/all-MiniLM-L6-v2
+[2025-06-22 23:33:02,227] INFO main:238 - embeddings_directory          : data/embeddings
+[2025-06-22 23:33:02,227] INFO main:238 - llm_api_url                   : http://127.0.0.1:1234
+[2025-06-22 23:33:02,227] INFO main:238 - llm_model_name                : llama-3.2-1b-instruct
+[2025-06-22 23:33:02,227] INFO main:238 - log_level                     : DEBUG
+[2025-06-22 23:33:02,227] INFO main:238 - raw_input_directory           : data/raw_input
+[2025-06-22 23:33:02,228] INFO main:238 - retriever_min_score_threshold : 0.2
+[2025-06-22 23:33:02,228] INFO main:238 - vectordb_directory            : data/vectordb
+[2025-06-22 23:33:02,228] INFO main:239 - ------------------------------
+[2025-06-22 23:33:02,228] INFO main:56 - Ensured directory exists: data\raw_input
+[2025-06-22 23:33:02,229] INFO main:56 - Ensured directory exists: data\cleaned_text
+[2025-06-22 23:33:02,229] INFO main:56 - Ensured directory exists: data\embeddings
+[2025-06-22 23:33:02,229] INFO main:56 - Ensured directory exists: data\vectordb
+[2025-06-22 23:33:02,229] INFO main:60 - [Step 01] Document ingestion started.
+[2025-06-22 23:33:02,803] INFO document_ingestor:42 - Initialized DocumentIngestor for model sentence-transformers/all-MiniLM-L6-v2
+[2025-06-22 23:33:02,803] INFO document_ingestor:43 - Files to process: ['A000062-datasheet.txt', 'ABX00030-datasheet.txt', 'ABX00080-datasheet.txt', 'ATMEGA2560.txt', 'ATMEGA328P.txt', 'ESP32.txt', 'RP2040.txt']
+[2025-06-22 23:33:02,804] INFO document_ingestor:84 - Processing: data\raw_input\A000062-datasheet.txt
+[2025-06-22 23:33:02,855] INFO document_ingestor:108 - Saved chunk 1/44 to data\cleaned_text\A000062-datasheet_chunk1.txt
+[2025-06-22 23:33:02,855] INFO document_ingestor:108 - Saved chunk 2/44 to data\cleaned_text\A000062-datasheet_chunk2.txt
+[2025-06-22 23:33:02,856] INFO document_ingestor:108 - Saved chunk 3/44 to data\cleaned_text\A000062-datasheet_chunk3.txt
+[2025-06-22 23:33:02,858] INFO document_ingestor:108 - Saved chunk 4/44 to data\cleaned_text\A000062-datasheet_chunk4.txt
+[2025-06-22 23:33:02,858] INFO document_ingestor:108 - Saved chunk 5/44 to data\cleaned_text\A000062-datasheet_chunk5.txt
+[2025-06-22 23:33:02,859] INFO document_ingestor:108 - Saved chunk 6/44 to data\cleaned_text\A000062-datasheet_chunk6.txt
+[2025-06-22 23:33:02,860] INFO document_ingestor:108 - Saved chunk 7/44 to data\cleaned_text\A000062-datasheet_chunk7.txt
+[2025-06-22 23:33:02,860] INFO document_ingestor:108 - Saved chunk 8/44 to data\cleaned_text\A000062-datasheet_chunk8.txt
+[2025-06-22 23:33:02,861] INFO document_ingestor:108 - Saved chunk 9/44 to data\cleaned_text\A000062-datasheet_chunk9.txt
+[2025-06-22 23:33:02,872] INFO document_ingestor:108 - Saved chunk 10/44 to data\cleaned_text\A000062-datasheet_chunk10.txt
+[2025-06-22 23:33:02,872] INFO document_ingestor:108 - Saved chunk 11/44 to data\cleaned_text\A000062-datasheet_chunk11.txt
+[2025-06-22 23:33:02,873] INFO document_ingestor:108 - Saved chunk 12/44 to data\cleaned_text\A000062-datasheet_chunk12.txt
+[2025-06-22 23:33:02,874] INFO document_ingestor:108 - Saved chunk 13/44 to data\cleaned_text\A000062-datasheet_chunk13.txt
+[2025-06-22 23:33:02,875] INFO document_ingestor:108 - Saved chunk 14/44 to data\cleaned_text\A000062-datasheet_chunk14.txt
+[2025-06-22 23:33:02,875] INFO document_ingestor:108 - Saved chunk 15/44 to data\cleaned_text\A000062-datasheet_chunk15.txt
+[2025-06-22 23:33:02,876] INFO document_ingestor:108 - Saved chunk 16/44 to data\cleaned_text\A000062-datasheet_chunk16.txt
+[2025-06-22 23:33:02,877] INFO document_ingestor:108 - Saved chunk 17/44 to data\cleaned_text\A000062-datasheet_chunk17.txt
+[2025-06-22 23:33:02,877] INFO document_ingestor:108 - Saved chunk 18/44 to data\cleaned_text\A000062-datasheet_chunk18.txt
+[2025-06-22 23:33:02,878] INFO document_ingestor:108 - Saved chunk 19/44 to data\cleaned_text\A000062-datasheet_chunk19.txt
+[2025-06-22 23:33:02,878] INFO document_ingestor:108 - Saved chunk 20/44 to data\cleaned_text\A000062-datasheet_chunk20.txt
+[2025-06-22 23:33:02,879] INFO document_ingestor:108 - Saved chunk 21/44 to data\cleaned_text\A000062-datasheet_chunk21.txt
+[2025-06-22 23:33:02,879] INFO document_ingestor:108 - Saved chunk 22/44 to data\cleaned_text\A000062-datasheet_chunk22.txt
+[2025-06-22 23:33:02,881] INFO document_ingestor:108 - Saved chunk 23/44 to data\cleaned_text\A000062-datasheet_chunk23.txt
+[2025-06-22 23:33:02,881] INFO document_ingestor:108 - Saved chunk 24/44 to data\cleaned_text\A000062-datasheet_chunk24.txt
+[2025-06-22 23:33:02,882] INFO document_ingestor:108 - Saved chunk 25/44 to data\cleaned_text\A000062-datasheet_chunk25.txt
+[2025-06-22 23:33:02,882] INFO document_ingestor:108 - Saved chunk 26/44 to data\cleaned_text\A000062-datasheet_chunk26.txt
+[2025-06-22 23:33:02,883] INFO document_ingestor:108 - Saved chunk 27/44 to data\cleaned_text\A000062-datasheet_chunk27.txt
+[2025-06-22 23:33:02,883] INFO document_ingestor:108 - Saved chunk 28/44 to data\cleaned_text\A000062-datasheet_chunk28.txt
+[2025-06-22 23:33:02,884] INFO document_ingestor:108 - Saved chunk 29/44 to data\cleaned_text\A000062-datasheet_chunk29.txt
+[2025-06-22 23:33:02,884] INFO document_ingestor:108 - Saved chunk 30/44 to data\cleaned_text\A000062-datasheet_chunk30.txt
+[2025-06-22 23:33:02,885] INFO document_ingestor:108 - Saved chunk 31/44 to data\cleaned_text\A000062-datasheet_chunk31.txt
+[2025-06-22 23:33:02,885] INFO document_ingestor:108 - Saved chunk 32/44 to data\cleaned_text\A000062-datasheet_chunk32.txt
+[2025-06-22 23:33:02,886] INFO document_ingestor:108 - Saved chunk 33/44 to data\cleaned_text\A000062-datasheet_chunk33.txt
+[2025-06-22 23:33:02,886] INFO document_ingestor:108 - Saved chunk 34/44 to data\cleaned_text\A000062-datasheet_chunk34.txt
+[2025-06-22 23:33:02,886] INFO document_ingestor:108 - Saved chunk 35/44 to data\cleaned_text\A000062-datasheet_chunk35.txt
+[2025-06-22 23:33:02,887] INFO document_ingestor:108 - Saved chunk 36/44 to data\cleaned_text\A000062-datasheet_chunk36.txt
+[2025-06-22 23:33:02,887] INFO document_ingestor:108 - Saved chunk 37/44 to data\cleaned_text\A000062-datasheet_chunk37.txt
+[2025-06-22 23:33:02,887] INFO document_ingestor:108 - Saved chunk 38/44 to data\cleaned_text\A000062-datasheet_chunk38.txt
+[2025-06-22 23:33:02,888] INFO document_ingestor:108 - Saved chunk 39/44 to data\cleaned_text\A000062-datasheet_chunk39.txt
+[2025-06-22 23:33:02,888] INFO document_ingestor:108 - Saved chunk 40/44 to data\cleaned_text\A000062-datasheet_chunk40.txt
+[2025-06-22 23:33:02,890] INFO document_ingestor:108 - Saved chunk 41/44 to data\cleaned_text\A000062-datasheet_chunk41.txt
+[2025-06-22 23:33:02,891] INFO document_ingestor:108 - Saved chunk 42/44 to data\cleaned_text\A000062-datasheet_chunk42.txt
+[2025-06-22 23:33:02,891] INFO document_ingestor:108 - Saved chunk 43/44 to data\cleaned_text\A000062-datasheet_chunk43.txt
+[2025-06-22 23:33:02,892] INFO document_ingestor:108 - Saved chunk 44/44 to data\cleaned_text\A000062-datasheet_chunk44.txt
+[2025-06-22 23:33:02,892] INFO document_ingestor:84 - Processing: data\raw_input\ABX00030-datasheet.txt
+[2025-06-22 23:33:02,911] INFO document_ingestor:108 - Saved chunk 1/17 to data\cleaned_text\ABX00030-datasheet_chunk1.txt
+[2025-06-22 23:33:02,913] INFO document_ingestor:108 - Saved chunk 2/17 to data\cleaned_text\ABX00030-datasheet_chunk2.txt
+[2025-06-22 23:33:02,913] INFO document_ingestor:108 - Saved chunk 3/17 to data\cleaned_text\ABX00030-datasheet_chunk3.txt
+[2025-06-22 23:33:02,914] INFO document_ingestor:108 - Saved chunk 4/17 to data\cleaned_text\ABX00030-datasheet_chunk4.txt
+[2025-06-22 23:33:02,914] INFO document_ingestor:108 - Saved chunk 5/17 to data\cleaned_text\ABX00030-datasheet_chunk5.txt
+[2025-06-22 23:33:02,915] INFO document_ingestor:108 - Saved chunk 6/17 to data\cleaned_text\ABX00030-datasheet_chunk6.txt
+[2025-06-22 23:33:02,915] INFO document_ingestor:108 - Saved chunk 7/17 to data\cleaned_text\ABX00030-datasheet_chunk7.txt
+[2025-06-22 23:33:02,916] INFO document_ingestor:108 - Saved chunk 8/17 to data\cleaned_text\ABX00030-datasheet_chunk8.txt
+[2025-06-22 23:33:02,916] INFO document_ingestor:108 - Saved chunk 9/17 to data\cleaned_text\ABX00030-datasheet_chunk9.txt
+[2025-06-22 23:33:02,918] INFO document_ingestor:108 - Saved chunk 10/17 to data\cleaned_text\ABX00030-datasheet_chunk10.txt
+[2025-06-22 23:33:02,918] INFO document_ingestor:108 - Saved chunk 11/17 to data\cleaned_text\ABX00030-datasheet_chunk11.txt
+[2025-06-22 23:33:02,918] INFO document_ingestor:108 - Saved chunk 12/17 to data\cleaned_text\ABX00030-datasheet_chunk12.txt
+[2025-06-22 23:33:02,919] INFO document_ingestor:108 - Saved chunk 13/17 to data\cleaned_text\ABX00030-datasheet_chunk13.txt
+[2025-06-22 23:33:02,919] INFO document_ingestor:108 - Saved chunk 14/17 to data\cleaned_text\ABX00030-datasheet_chunk14.txt
+[2025-06-22 23:33:02,920] INFO document_ingestor:108 - Saved chunk 15/17 to data\cleaned_text\ABX00030-datasheet_chunk15.txt
+[2025-06-22 23:33:02,920] INFO document_ingestor:108 - Saved chunk 16/17 to data\cleaned_text\ABX00030-datasheet_chunk16.txt
+[2025-06-22 23:33:02,921] INFO document_ingestor:108 - Saved chunk 17/17 to data\cleaned_text\ABX00030-datasheet_chunk17.txt
+[2025-06-22 23:33:02,921] INFO document_ingestor:84 - Processing: data\raw_input\ABX00080-datasheet.txt
+[2025-06-22 23:33:02,951] INFO document_ingestor:108 - Saved chunk 1/28 to data\cleaned_text\ABX00080-datasheet_chunk1.txt
+[2025-06-22 23:33:02,952] INFO document_ingestor:108 - Saved chunk 2/28 to data\cleaned_text\ABX00080-datasheet_chunk2.txt
+[2025-06-22 23:33:02,953] INFO document_ingestor:108 - Saved chunk 3/28 to data\cleaned_text\ABX00080-datasheet_chunk3.txt
+[2025-06-22 23:33:02,954] INFO document_ingestor:108 - Saved chunk 4/28 to data\cleaned_text\ABX00080-datasheet_chunk4.txt
+[2025-06-22 23:33:02,954] INFO document_ingestor:108 - Saved chunk 5/28 to data\cleaned_text\ABX00080-datasheet_chunk5.txt
+[2025-06-22 23:33:02,955] INFO document_ingestor:108 - Saved chunk 6/28 to data\cleaned_text\ABX00080-datasheet_chunk6.txt
+[2025-06-22 23:33:02,956] INFO document_ingestor:108 - Saved chunk 7/28 to data\cleaned_text\ABX00080-datasheet_chunk7.txt
+[2025-06-22 23:33:02,958] INFO document_ingestor:108 - Saved chunk 8/28 to data\cleaned_text\ABX00080-datasheet_chunk8.txt
+[2025-06-22 23:33:02,958] INFO document_ingestor:108 - Saved chunk 9/28 to data\cleaned_text\ABX00080-datasheet_chunk9.txt
+[2025-06-22 23:33:02,959] INFO document_ingestor:108 - Saved chunk 10/28 to data\cleaned_text\ABX00080-datasheet_chunk10.txt
+[2025-06-22 23:33:02,960] INFO document_ingestor:108 - Saved chunk 11/28 to data\cleaned_text\ABX00080-datasheet_chunk11.txt
+[2025-06-22 23:33:02,961] INFO document_ingestor:108 - Saved chunk 12/28 to data\cleaned_text\ABX00080-datasheet_chunk12.txt
+[2025-06-22 23:33:02,961] INFO document_ingestor:108 - Saved chunk 13/28 to data\cleaned_text\ABX00080-datasheet_chunk13.txt
+[2025-06-22 23:33:02,964] INFO document_ingestor:108 - Saved chunk 14/28 to data\cleaned_text\ABX00080-datasheet_chunk14.txt
+[2025-06-22 23:33:02,964] INFO document_ingestor:108 - Saved chunk 15/28 to data\cleaned_text\ABX00080-datasheet_chunk15.txt
+[2025-06-22 23:33:02,965] INFO document_ingestor:108 - Saved chunk 16/28 to data\cleaned_text\ABX00080-datasheet_chunk16.txt
+[2025-06-22 23:33:02,965] INFO document_ingestor:108 - Saved chunk 17/28 to data\cleaned_text\ABX00080-datasheet_chunk17.txt
+[2025-06-22 23:33:02,965] INFO document_ingestor:108 - Saved chunk 18/28 to data\cleaned_text\ABX00080-datasheet_chunk18.txt
+[2025-06-22 23:33:02,966] INFO document_ingestor:108 - Saved chunk 19/28 to data\cleaned_text\ABX00080-datasheet_chunk19.txt
+[2025-06-22 23:33:02,966] INFO document_ingestor:108 - Saved chunk 20/28 to data\cleaned_text\ABX00080-datasheet_chunk20.txt
+[2025-06-22 23:33:02,967] INFO document_ingestor:108 - Saved chunk 21/28 to data\cleaned_text\ABX00080-datasheet_chunk21.txt
+[2025-06-22 23:33:02,967] INFO document_ingestor:108 - Saved chunk 22/28 to data\cleaned_text\ABX00080-datasheet_chunk22.txt
+[2025-06-22 23:33:02,967] INFO document_ingestor:108 - Saved chunk 23/28 to data\cleaned_text\ABX00080-datasheet_chunk23.txt
+[2025-06-22 23:33:02,969] INFO document_ingestor:108 - Saved chunk 24/28 to data\cleaned_text\ABX00080-datasheet_chunk24.txt
+[2025-06-22 23:33:02,969] INFO document_ingestor:108 - Saved chunk 25/28 to data\cleaned_text\ABX00080-datasheet_chunk25.txt
+[2025-06-22 23:33:02,970] INFO document_ingestor:108 - Saved chunk 26/28 to data\cleaned_text\ABX00080-datasheet_chunk26.txt
+[2025-06-22 23:33:02,970] INFO document_ingestor:108 - Saved chunk 27/28 to data\cleaned_text\ABX00080-datasheet_chunk27.txt
+[2025-06-22 23:33:02,971] INFO document_ingestor:108 - Saved chunk 28/28 to data\cleaned_text\ABX00080-datasheet_chunk28.txt
+[2025-06-22 23:33:02,971] INFO document_ingestor:84 - Processing: data\raw_input\ATMEGA2560.txt
+[2025-06-22 23:33:03,002] INFO document_ingestor:108 - Saved chunk 1/27 to data\cleaned_text\ATMEGA2560_chunk1.txt
+[2025-06-22 23:33:03,003] INFO document_ingestor:108 - Saved chunk 2/27 to data\cleaned_text\ATMEGA2560_chunk2.txt
+[2025-06-22 23:33:03,004] INFO document_ingestor:108 - Saved chunk 3/27 to data\cleaned_text\ATMEGA2560_chunk3.txt
+[2025-06-22 23:33:03,004] INFO document_ingestor:108 - Saved chunk 4/27 to data\cleaned_text\ATMEGA2560_chunk4.txt
+[2025-06-22 23:33:03,005] INFO document_ingestor:108 - Saved chunk 5/27 to data\cleaned_text\ATMEGA2560_chunk5.txt
+[2025-06-22 23:33:03,006] INFO document_ingestor:108 - Saved chunk 6/27 to data\cleaned_text\ATMEGA2560_chunk6.txt
+[2025-06-22 23:33:03,006] INFO document_ingestor:108 - Saved chunk 7/27 to data\cleaned_text\ATMEGA2560_chunk7.txt
+[2025-06-22 23:33:03,007] INFO document_ingestor:108 - Saved chunk 8/27 to data\cleaned_text\ATMEGA2560_chunk8.txt
+[2025-06-22 23:33:03,008] INFO document_ingestor:108 - Saved chunk 9/27 to data\cleaned_text\ATMEGA2560_chunk9.txt
+[2025-06-22 23:33:03,008] INFO document_ingestor:108 - Saved chunk 10/27 to data\cleaned_text\ATMEGA2560_chunk10.txt
+[2025-06-22 23:33:03,009] INFO document_ingestor:108 - Saved chunk 11/27 to data\cleaned_text\ATMEGA2560_chunk11.txt
+[2025-06-22 23:33:03,009] INFO document_ingestor:108 - Saved chunk 12/27 to data\cleaned_text\ATMEGA2560_chunk12.txt
+[2025-06-22 23:33:03,010] INFO document_ingestor:108 - Saved chunk 13/27 to data\cleaned_text\ATMEGA2560_chunk13.txt
+[2025-06-22 23:33:03,010] INFO document_ingestor:108 - Saved chunk 14/27 to data\cleaned_text\ATMEGA2560_chunk14.txt
+[2025-06-22 23:33:03,011] INFO document_ingestor:108 - Saved chunk 15/27 to data\cleaned_text\ATMEGA2560_chunk15.txt
+[2025-06-22 23:33:03,011] INFO document_ingestor:108 - Saved chunk 16/27 to data\cleaned_text\ATMEGA2560_chunk16.txt
+[2025-06-22 23:33:03,012] INFO document_ingestor:108 - Saved chunk 17/27 to data\cleaned_text\ATMEGA2560_chunk17.txt
+[2025-06-22 23:33:03,012] INFO document_ingestor:108 - Saved chunk 18/27 to data\cleaned_text\ATMEGA2560_chunk18.txt
+[2025-06-22 23:33:03,013] INFO document_ingestor:108 - Saved chunk 19/27 to data\cleaned_text\ATMEGA2560_chunk19.txt
+[2025-06-22 23:33:03,013] INFO document_ingestor:108 - Saved chunk 20/27 to data\cleaned_text\ATMEGA2560_chunk20.txt
+[2025-06-22 23:33:03,015] INFO document_ingestor:108 - Saved chunk 21/27 to data\cleaned_text\ATMEGA2560_chunk21.txt
+[2025-06-22 23:33:03,015] INFO document_ingestor:108 - Saved chunk 22/27 to data\cleaned_text\ATMEGA2560_chunk22.txt
+[2025-06-22 23:33:03,016] INFO document_ingestor:108 - Saved chunk 23/27 to data\cleaned_text\ATMEGA2560_chunk23.txt
+[2025-06-22 23:33:03,016] INFO document_ingestor:108 - Saved chunk 24/27 to data\cleaned_text\ATMEGA2560_chunk24.txt
+[2025-06-22 23:33:03,017] INFO document_ingestor:108 - Saved chunk 25/27 to data\cleaned_text\ATMEGA2560_chunk25.txt
+[2025-06-22 23:33:03,017] INFO document_ingestor:108 - Saved chunk 26/27 to data\cleaned_text\ATMEGA2560_chunk26.txt
+[2025-06-22 23:33:03,018] INFO document_ingestor:108 - Saved chunk 27/27 to data\cleaned_text\ATMEGA2560_chunk27.txt
+[2025-06-22 23:33:03,018] INFO document_ingestor:84 - Processing: data\raw_input\ATMEGA328P.txt
+[2025-06-22 23:33:03,019] INFO document_ingestor:108 - Saved chunk 1/1 to data\cleaned_text\ATMEGA328P_chunk1.txt
+[2025-06-22 23:33:03,019] INFO document_ingestor:84 - Processing: data\raw_input\ESP32.txt
+[2025-06-22 23:33:03,021] INFO document_ingestor:108 - Saved chunk 1/1 to data\cleaned_text\ESP32_chunk1.txt
+[2025-06-22 23:33:03,021] INFO document_ingestor:84 - Processing: data\raw_input\RP2040.txt
+[2025-06-22 23:33:03,023] INFO document_ingestor:108 - Saved chunk 1/1 to data\cleaned_text\RP2040_chunk1.txt
+[2025-06-22 23:33:03,023] INFO main:70 - [Step 01] Document ingestion completed.
+[2025-06-22 23:33:03,025] INFO main:257 - RAG pipeline done

@@ -1,0 +1,43 @@
+[2025-06-22 21:01:29,950] INFO main:192 - ------ Command line arguments -------
+[2025-06-22 21:01:29,950] INFO main:193 - step                                              : step05_generate_response
+[2025-06-22 21:01:29,950] INFO main:194 - input_filename                                    : None
+[2025-06-22 21:01:29,951] INFO main:195 - query_args                                        : Can the Arduino Mega connect to Wi-fi?
+[2025-06-22 21:01:29,951] INFO main:196 - use_rag                                           : False
+[2025-06-22 21:01:29,951] INFO main:197 - ------ Config Settings -------
+[2025-06-22 21:01:29,962] INFO main:199 - cleaned_text_directory                            : data/cleaned_text
+[2025-06-22 21:01:29,963] INFO main:199 - collection_name                                   : collections
+[2025-06-22 21:01:29,963] INFO main:199 - embedding_model_name                              : sentence-transformers/all-MiniLM-L6-v2
+[2025-06-22 21:01:29,963] INFO main:199 - embeddings_directory                              : data/embeddings
+[2025-06-22 21:01:29,964] INFO main:199 - llm_api_url                                       : http://127.0.0.1:1234
+[2025-06-22 21:01:29,964] INFO main:199 - llm_model_name                                    : llama-3.2-1b-instruct
+[2025-06-22 21:01:29,964] INFO main:199 - log_level                                         : debug
+[2025-06-22 21:01:29,964] INFO main:199 - raw_input_directory                               : data/raw_input
+[2025-06-22 21:01:29,964] INFO main:199 - retriever_min_score_threshold                     : 0.5
+[2025-06-22 21:01:29,964] INFO main:199 - vectordb_directory                                : data/vectordb
+[2025-06-22 21:01:29,964] INFO main:200 - ------------------------------
+[2025-06-22 21:01:29,965] INFO main:46 - Ensured directory exists: data\raw_input
+[2025-06-22 21:01:29,965] INFO main:46 - Ensured directory exists: data\cleaned_text
+[2025-06-22 21:01:29,966] INFO main:46 - Ensured directory exists: data\embeddings
+[2025-06-22 21:01:29,966] INFO main:46 - Ensured directory exists: data\vectordb
+[2025-06-22 21:01:29,966] INFO main:131 - [Step 05] Response generation started.
+[2025-06-22 21:01:29,967] INFO llm_client:15 - Initialized LLMClient: llm_api_url: http://127.0.0.1:1234/v1/chat/completions, model_name: llama-3.2-1b-instruct
+[2025-06-22 21:01:29,986] INFO posthog:22 - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[2025-06-22 21:01:30,087] INFO SentenceTransformer:211 - Use pytorch device_name: cpu
+[2025-06-22 21:01:30,088] INFO SentenceTransformer:219 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+[2025-06-22 21:01:33,559] INFO chromadb_retriever:22 - Initialized ChromaDBRetriever: embedding_model_name: sentence-transformers/all-MiniLM-L6-v2, collection_name: collections, score_threshold: 0.5
+[2025-06-22 21:01:33,560] INFO rag_query_processor:18 - Initialized RAGQueryProcessor: use_rag: False
+[2025-06-22 21:01:33,560] DEBUG rag_query_processor:24 - Received query: Can the Arduino Mega connect to Wi-fi?
+[2025-06-22 21:01:33,560] DEBUG rag_query_processor:55 - Prompt to LLM: 
+        You are an AI that helps users build IoT projects. Answer using the context. If unsure, say, say 'I don't know'. 
+
+        Context:
+        No relevant context found.
+
+        Question:
+        Can the Arduino Mega connect to Wi-fi?
+        
+[2025-06-22 21:01:35,595] DEBUG rag_query_processor:58 - LLM Response: The Arduino Mega does not have built-in Wi-Fi capabilities. It is a microcontroller that can be connected to various communication protocols such as serial, I2C, SPI, and others, but it doesn't have a built-in Wi-Fi module.
+
+However, there are some shields available for the Arduino Mega that provide Wi-Fi connectivity, like the Adafruit WiFi Shield or the ESP8266 WiFi Module. These shields can be connected to the Arduino Mega and provide Wi-Fi capabilities, allowing you to connect your project to the internet.
+[2025-06-22 21:01:35,596] INFO main:150 - [Step 05] Response generation completed.
+[2025-06-22 21:01:35,596] INFO main:213 - RAG pipeline done

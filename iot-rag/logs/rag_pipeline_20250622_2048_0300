@@ -1,0 +1,55 @@
+[2025-06-22 20:48:03,004] INFO main:192 - ------ Command line arguments -------
+[2025-06-22 20:48:03,004] INFO main:193 - step                                              : step05_generate_response
+[2025-06-22 20:48:03,004] INFO main:194 - input_filename                                    : None
+[2025-06-22 20:48:03,006] INFO main:195 - query_args                                        : What are the signal out pins of the arduino nano Iot 33?
+[2025-06-22 20:48:03,006] INFO main:196 - use_rag                                           : False
+[2025-06-22 20:48:03,006] INFO main:197 - ------ Config Settings -------
+[2025-06-22 20:48:03,016] INFO main:199 - cleaned_text_directory                            : data/cleaned_text
+[2025-06-22 20:48:03,016] INFO main:199 - collection_name                                   : collections
+[2025-06-22 20:48:03,016] INFO main:199 - embedding_model_name                              : sentence-transformers/all-MiniLM-L6-v2
+[2025-06-22 20:48:03,016] INFO main:199 - embeddings_directory                              : data/embeddings
+[2025-06-22 20:48:03,017] INFO main:199 - llm_api_url                                       : http://127.0.0.1:1234
+[2025-06-22 20:48:03,017] INFO main:199 - llm_model_name                                    : llama-3.2-1b-instruct
+[2025-06-22 20:48:03,017] INFO main:199 - log_level                                         : debug
+[2025-06-22 20:48:03,017] INFO main:199 - raw_input_directory                               : data/raw_input
+[2025-06-22 20:48:03,017] INFO main:199 - retriever_min_score_threshold                     : 0.5
+[2025-06-22 20:48:03,017] INFO main:199 - vectordb_directory                                : data/vectordb
+[2025-06-22 20:48:03,018] INFO main:200 - ------------------------------
+[2025-06-22 20:48:03,018] INFO main:46 - Ensured directory exists: data\raw_input
+[2025-06-22 20:48:03,018] INFO main:46 - Ensured directory exists: data\cleaned_text
+[2025-06-22 20:48:03,018] INFO main:46 - Ensured directory exists: data\embeddings
+[2025-06-22 20:48:03,018] INFO main:46 - Ensured directory exists: data\vectordb
+[2025-06-22 20:48:03,018] INFO main:131 - [Step 05] Response generation started.
+[2025-06-22 20:48:03,018] INFO llm_client:15 - Initialized LLMClient: llm_api_url: http://127.0.0.1:1234/v1/chat/completions, model_name: llama-3.2-1b-instruct
+[2025-06-22 20:48:03,040] INFO posthog:22 - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[2025-06-22 20:48:03,140] INFO SentenceTransformer:211 - Use pytorch device_name: cpu
+[2025-06-22 20:48:03,140] INFO SentenceTransformer:219 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+[2025-06-22 20:48:06,463] INFO chromadb_retriever:22 - Initialized ChromaDBRetriever: embedding_model_name: sentence-transformers/all-MiniLM-L6-v2, collection_name: collections, score_threshold: 0.5
+[2025-06-22 20:48:06,463] INFO rag_query_processor:18 - Initialized RAGQueryProcessor: use_rag: False
+[2025-06-22 20:48:06,464] DEBUG rag_query_processor:24 - Received query: What are the signal out pins of the arduino nano Iot 33?
+[2025-06-22 20:48:06,464] DEBUG rag_query_processor:55 - Prompt to LLM: 
+        You are an AI that helps users build IoT projects. Answer using the context. If unsure, say, say 'I don't know'. 
+
+        Context:
+        No relevant context found.
+
+        Question:
+        What are the signal out pins of the arduino nano Iot 33?
+        
+[2025-06-22 20:48:09,162] DEBUG rag_query_processor:58 - LLM Response: The Arduino Nano I/O 33 is a popular development board for IoT projects.
+
+According to the Arduino documentation, the signal out pins (also known as I/O pins) on the Arduino Nano I/O 33 include:
+
+- A3 - Analog Input Pin
+- A0 - Analog Input Pin
+- A1 - Analog Input Pin
+- A2 - Analog Input Pin
+- Digital Pins: D0-D13
+- SPI/MISO: MISO (Pin 11)
+- SPI/MOSI: MOSI (Pin 12)
+- SPI/SCK: SCK (Pin 13)
+- RESET: Reset Pin
+
+Please note that some pins are used for specific purposes, such as analog inputs or SPI/MISO/MOSI/SCK.
+[2025-06-22 20:48:09,163] INFO main:150 - [Step 05] Response generation completed.
+[2025-06-22 20:48:09,163] INFO main:213 - RAG pipeline done

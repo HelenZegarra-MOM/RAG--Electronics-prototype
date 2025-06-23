@@ -1,0 +1,1 @@
+{"source_file": "ABX00080-datasheet_chunk11.txt", "text_preview": "digital analog reference voltage 4 gnd power ground 5 d13 / sck digital gpio 13 / spi clock 6 d12 / cipo digital gpio 12 / spi controller in peripheral out 7 d11 / copi digital gpio 11 ( pwm ) / spi controller out peripheral in 8 d10 / cs digital gpio 10 ( pwm ) / spi chip select 9 d9 digital gpio 9"}

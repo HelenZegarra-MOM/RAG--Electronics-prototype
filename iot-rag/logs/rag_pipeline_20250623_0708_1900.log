@@ -1,0 +1,21 @@
+[2025-06-23 07:08:19,009] INFO main:195 - Running step: step03_store_vectors
+[2025-06-23 07:08:19,010] INFO main:196 - Input file: ATMEGA2560.txt
+[2025-06-23 07:08:19,010] INFO main:197 - Query: None
+[2025-06-23 07:08:19,010] INFO main:198 - Config loaded from: config.json
+[2025-06-23 07:08:19,011] INFO main:47 - Ensured directory exists: data\raw_input
+[2025-06-23 07:08:19,012] INFO main:47 - Ensured directory exists: data\cleaned_text
+[2025-06-23 07:08:19,012] INFO main:47 - Ensured directory exists: data\embeddings
+[2025-06-23 07:08:19,013] INFO main:47 - Ensured directory exists: data\vectordb
+[2025-06-23 07:08:19,014] INFO main:79 - [Step 03] Vector storage started.
+[2025-06-23 07:08:19,014] INFO main:83 - Deleting existing vectordb
+[2025-06-23 07:08:19,015] ERROR utilities:37 - Error deleting directory data/vectordb: [WinError 5] Access is denied: 'data/vectordb'
+[2025-06-23 07:08:19,015] INFO embedding_loader:27 - 🔃 Starting vector store creation...
+[2025-06-23 07:08:19,044] INFO posthog:22 - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[2025-06-23 07:08:19,105] DEBUG config:359 - Starting component System
+[2025-06-23 07:08:19,105] DEBUG config:359 - Starting component Posthog
+[2025-06-23 07:08:19,200] WARNING embedding_loader:42 - ❌ Embedding file not found: data\embeddings\ATMEGA2560.txt_embeddings.json
+[2025-06-23 07:08:19,200] INFO embedding_loader:70 - 📚 Vector storage completed.
+[2025-06-23 07:08:19,201] INFO main:99 - [Step 03] Vector storage completed.
+[2025-06-23 07:08:19,201] INFO main:216 - RAG pipeline done
+[2025-06-23 07:08:19,672] DEBUG connectionpool:1003 - Starting new HTTPS connection (1): us.i.posthog.com:443
+[2025-06-23 07:08:20,650] DEBUG connectionpool:456 - https://us.i.posthog.com:443 "POST /batch/ HTTP/1.1" 200 15

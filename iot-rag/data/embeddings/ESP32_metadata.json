@@ -1,0 +1,1 @@
+{"source_file": "ESP32.txt", "text_preview": "ESP32-WROOM-32 Datasheet\n1. Microcontroller Specifications:\nType: ESP32\nMemory: 4MB Flash, 520KB SRAM. No EEPROM.\nClock Speed: 240 MHz. Features include various security features like encryption.\nPeripherals: Wi-Fi, Bluetooth, UART, SPI, I2C, I2S, 18x ADC, 2x DAC, Timers, PWM.\n2. Pin Configurations:"}

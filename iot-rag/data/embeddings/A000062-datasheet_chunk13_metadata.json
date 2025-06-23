@@ -1,0 +1,1 @@
+{"source_file": "A000062-datasheet_chunk13.txt", "text_preview": "##v 3 sck internal serial clock 4 copi internal controller out peripheral in 5 reset internal reset 6 gnd internal ground spi pinout 6. 2. 4 digital pins d22 - d53 lhs pin function type description 1 + 5v power + 5v power rail 2 d22 digital gpio 22 3 d24 digital gpio 24 4 d26 digital gpio 26 5 d28 d"}

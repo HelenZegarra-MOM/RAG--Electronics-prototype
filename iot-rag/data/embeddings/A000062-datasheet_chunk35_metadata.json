@@ -1,0 +1,1 @@
+{"source_file": "A000062-datasheet_chunk35.txt", "text_preview": "22 d17 / rx2 gpio 17 / 2 23 d18 / tx1 gpio 18 / 1 24 d19 / rx1 gpio 19 / 1 25 d20 / sda gpio 20 / i2c 0 26 d21 / scl gpio 21 / i2c 0 26 arduino due 34 / 50 arduino due modified : 19 / 06 / 2025 16. 2. 3 spi spi 1 cipo 2 + 5v 5 v 3 sck 4 copi 5 reset 6 gnd spi 16. 2. 4 d22 - d53 lhs 1 + 5v + 5v 2 d22"}

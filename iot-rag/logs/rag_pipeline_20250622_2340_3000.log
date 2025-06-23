@@ -1,0 +1,35 @@
+[2025-06-22 23:40:30,003] INFO main:231 - ------ Command line arguments -------
+[2025-06-22 23:40:30,004] INFO main:232 - step                : step04_retrieve_chunks
+[2025-06-22 23:40:30,004] INFO main:233 - input_filename      : None
+[2025-06-22 23:40:30,004] INFO main:234 - query_args          : Does ESP32 support 5V?
+[2025-06-22 23:40:30,004] INFO main:235 - use_rag             : False
+[2025-06-22 23:40:30,004] INFO main:236 - ------ Config Settings -------
+[2025-06-22 23:40:30,004] INFO main:238 - cleaned_text_directory        : data/cleaned_text
+[2025-06-22 23:40:30,005] INFO main:238 - collection_name               : collections
+[2025-06-22 23:40:30,005] INFO main:238 - embedding_model_name          : sentence-transformers/all-MiniLM-L6-v2
+[2025-06-22 23:40:30,005] INFO main:238 - embeddings_directory          : data/embeddings
+[2025-06-22 23:40:30,005] INFO main:238 - llm_api_url                   : http://127.0.0.1:1234
+[2025-06-22 23:40:30,005] INFO main:238 - llm_model_name                : llama-3.2-1b-instruct
+[2025-06-22 23:40:30,005] INFO main:238 - log_level                     : DEBUG
+[2025-06-22 23:40:30,005] INFO main:238 - raw_input_directory           : data/raw_input
+[2025-06-22 23:40:30,005] INFO main:238 - retriever_min_score_threshold : 0.2
+[2025-06-22 23:40:30,006] INFO main:238 - vectordb_directory            : data/vectordb
+[2025-06-22 23:40:30,006] INFO main:239 - ------------------------------
+[2025-06-22 23:40:30,006] INFO main:56 - Ensured directory exists: data\raw_input
+[2025-06-22 23:40:30,006] INFO main:56 - Ensured directory exists: data\cleaned_text
+[2025-06-22 23:40:30,007] INFO main:56 - Ensured directory exists: data\embeddings
+[2025-06-22 23:40:30,007] INFO main:56 - Ensured directory exists: data\vectordb
+[2025-06-22 23:40:30,007] INFO main:116 - [Step 04] Retrieval started.
+[2025-06-22 23:40:30,007] INFO main:117 - Query arguments: Does ESP32 support 5V?
+[2025-06-22 23:40:30,032] INFO posthog:22 - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[2025-06-22 23:40:30,135] INFO SentenceTransformer:211 - Use pytorch device_name: cpu
+[2025-06-22 23:40:30,136] INFO SentenceTransformer:219 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+[2025-06-22 23:40:33,609] INFO chromadb_retriever:22 - Initialized ChromaDBRetriever: model=sentence-transformers/all-MiniLM-L6-v2, collection=collections, score_threshold=0.2
+[2025-06-22 23:40:33,697] DEBUG chromadb_retriever:42 - Raw query results: {'ids': [['data\\cleaned_text\\ESP32_cleaned.txt', 'data\\cleaned_text\\ATMEGA328P_cleaned.txt', 'data\\cleaned_text\\RP2040_cleaned.txt']], 'embeddings': None, 'documents': [[None, None, None]], 'uris': None, 'included': ['metadatas', 'documents', 'distances'], 'data': None, 'metadatas': [[{'text_preview': 'esp32 - wroom - 32 datasheet 1. microcontroller specifications : type : esp32 memory : 4mb flash, 520kb sram. no eeprom. clock speed : 240 mhz. features include various security features like encrypti...', 'source_file': 'ESP32_cleaned.txt'}, {'source_file': 'ATMEGA328P_cleaned.txt', 'text_preview': 'arduino uno r3 datasheet 1. microcontroller specifications : type : atmega328p memory : 32kb flash, 2kb sram, 1kb eeprom. clock speed : 16 mhz. features include por and bod. peripherals : uart, spi, i...'}, {'source_file': 'RP2040_cleaned.txt', 'text_preview': 'raspberry pi pico datasheet 1. microcontroller specifications : type : rp2040 memory : 2mb flash, 264kb sram. clock speed : 133 mhz. flexible clock. peripherals : 2x uart, 2x spi, 2x i2c, 4x adc, 16x ...'}]], 'distances': [[2.055293321609497, 2.1333539485931396, 2.6708109378814697]]}
+[2025-06-22 23:40:33,697] DEBUG chromadb_retriever:56 - Skipping 'data\cleaned_text\ESP32_cleaned.txt' — distance 2.06 > threshold 0.2
+[2025-06-22 23:40:33,697] DEBUG chromadb_retriever:56 - Skipping 'data\cleaned_text\ATMEGA328P_cleaned.txt' — distance 2.13 > threshold 0.2
+[2025-06-22 23:40:33,697] DEBUG chromadb_retriever:56 - Skipping 'data\cleaned_text\RP2040_cleaned.txt' — distance 2.67 > threshold 0.2
+[2025-06-22 23:40:33,698] INFO chromadb_retriever:72 - Retrieved 0 relevant document(s) after filtering.
+[2025-06-22 23:40:33,698] INFO main:132 - *** No relevant documents found.
+[2025-06-22 23:40:33,698] INFO main:158 - [Step 04] Retrieval completed.
+[2025-06-22 23:40:33,699] INFO main:257 - RAG pipeline done

@@ -1,0 +1,1 @@
+{"source_file": "ATMEGA2560_chunk8.txt", "text_preview": "mega 2560 rev3 10 / 34 arduino mega 2560 rev3 modified : 19 / 06 / 2025 5. 1 analog pin function type description 1 nc nc not connected 2 ioref ioref reference for digital logic v - connected to 5v 3 reset reset reset 4 + 3v3 power + 3v3 power rail 5 + 5v power + 5v power rail 6 gnd power ground 7 g"}

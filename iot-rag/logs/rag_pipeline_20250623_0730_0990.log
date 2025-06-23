@@ -1,0 +1,17 @@
+[2025-06-23 07:30:09,904] INFO main:195 - Running step: step05_generate_response
+[2025-06-23 07:30:09,904] INFO main:196 - Input file: None
+[2025-06-23 07:30:09,904] INFO main:197 - Query: What is the operating temperature of the ATMEGA2560?
+[2025-06-23 07:30:09,904] INFO main:198 - Config loaded from: config.json
+[2025-06-23 07:30:09,905] INFO main:47 - Ensured directory exists: data\raw_input
+[2025-06-23 07:30:09,905] INFO main:47 - Ensured directory exists: data\cleaned_text
+[2025-06-23 07:30:09,906] INFO main:47 - Ensured directory exists: data\embeddings
+[2025-06-23 07:30:09,916] INFO main:47 - Ensured directory exists: data\vectordb
+[2025-06-23 07:30:09,917] INFO main:138 - [Step 05] Response generation started.
+[2025-06-23 07:30:09,917] ERROR main:214 - Pipeline crashed during execution.
+Traceback (most recent call last):
+  File "C:\Users\Helen Zegarra\OneDrive\Documents\Desktop\AI class projects\iot-rag\main.py", line 211, in main
+    steps[args.step](args)
+  File "C:\Users\Helen Zegarra\OneDrive\Documents\Desktop\AI class projects\iot-rag\main.py", line 140, in step05_generate_response
+    llm_client = LLMClient(
+TypeError: LLMClient.__init__() got an unexpected keyword argument 'llm_api_url'
+[2025-06-23 07:30:09,918] INFO main:216 - RAG pipeline done

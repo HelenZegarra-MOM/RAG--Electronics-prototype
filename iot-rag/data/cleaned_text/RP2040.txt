@@ -1,0 +1,19 @@
+Raspberry Pi Pico Datasheet
+1. Microcontroller Specifications:
+Type: RP2040
+Memory: 2MB Flash, 264KB SRAM.
+Clock Speed: 133 MHz. Flexible clock.
+Peripherals: 2x UART, 2x SPI, 2x I2C, 4x ADC, 16x PWM controllers.
+2. Pin Configurations:
+GPIO Pins: 26 (most can be used as digital I/O).
+Analog Input Pins: 3 (with dedicated ADC).
+Power Pins: VBUS (5V from USB), VSYS (external 1.8-5.5V), 3.3V, GND.
+Communication: All common serial interfaces.
+Reset Pin: RUN pin.
+3. Power Requirements:
+Operating Voltage: 3.3V. Input Voltage: 1.8V - 5.5V (for VSYS).
+4. Programming Interface:
+USB Mass Storage (UF2 bootloader). SWD interface for debugging.
+5. Additional Information:
+Interrupts: Flexible interrupt system. PWM Channels: Up to 16.
+Refer to the official RP2040 datasheet for comprehensive details.

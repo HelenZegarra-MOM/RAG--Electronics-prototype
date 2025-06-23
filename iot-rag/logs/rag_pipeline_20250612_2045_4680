@@ -1,0 +1,24 @@
+[2025-06-12 20:45:46,805] INFO main:192 - ------ Command line arguments -------
+[2025-06-12 20:45:46,806] INFO main:193 - step                                              : step03_store_vectors
+[2025-06-12 20:45:46,806] INFO main:194 - input_filename                                    : all
+[2025-06-12 20:45:46,806] INFO main:195 - query_args                                        : None
+[2025-06-12 20:45:46,807] INFO main:196 - use_rag                                           : False
+[2025-06-12 20:45:46,807] INFO main:197 - ------ Config Settings -------
+[2025-06-12 20:45:46,807] INFO main:199 - cleaned_text_directory                            : data/cleaned_text
+[2025-06-12 20:45:46,808] INFO main:199 - collection_name                                   : collections
+[2025-06-12 20:45:46,808] INFO main:199 - embedding_model_name                              : sentence-transformers/all-MiniLM-L6-v2
+[2025-06-12 20:45:46,809] INFO main:199 - embeddings_directory                              : data/embeddings
+[2025-06-12 20:45:46,809] INFO main:199 - llm_api_url                                       : http://localhost:1234/v1/completions
+[2025-06-12 20:45:46,809] INFO main:199 - llm_model_name                                    : llama-3.2-1b-instruct
+[2025-06-12 20:45:46,809] INFO main:199 - log_level                                         : debug
+[2025-06-12 20:45:46,809] INFO main:199 - raw_input_directory                               : data/raw_input
+[2025-06-12 20:45:46,810] INFO main:199 - retriever_min_score_threshold                     : 0.5
+[2025-06-12 20:45:46,810] INFO main:199 - vectordb_directory                                : data/vectordb
+[2025-06-12 20:45:46,810] INFO main:200 - ------------------------------
+[2025-06-12 20:45:46,811] INFO main:46 - Ensured directory exists: data\raw_input
+[2025-06-12 20:45:46,812] INFO main:46 - Ensured directory exists: data\cleaned_text
+[2025-06-12 20:45:46,812] INFO main:46 - Ensured directory exists: data\embeddings
+[2025-06-12 20:45:46,813] INFO main:46 - Ensured directory exists: data\vectordb
+[2025-06-12 20:45:46,813] INFO main:78 - [Step 03] Vector storage started.
+[2025-06-12 20:45:46,813] INFO main:82 - deleting existing vectordb
+[2025-06-12 20:45:46,814] ERROR utilities:14 - Permission denied to delete 'data/vectordb'.

@@ -1,0 +1,1 @@
+{"source_file": "ABX00080-datasheet_chunk14.txt", "text_preview": "##er which allows flashing the board via usb. in case a sketch locks up the processor and the board is not reachable anymore via usb, it is possible to enter bootloader mode by double - tapping the reset button right after the power - up. certifications 13 declaration of conformity ce doc ( eu ) we "}

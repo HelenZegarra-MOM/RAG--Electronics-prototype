@@ -1,0 +1,56 @@
+[2025-06-23 06:51:58,859] INFO main:229 - ------ Command line arguments -------
+[2025-06-23 06:51:58,859] INFO main:230 - step                : step03_store_vectors
+[2025-06-23 06:51:58,860] INFO main:231 - input_filename      : ATMEGA2560.txt
+[2025-06-23 06:51:58,860] INFO main:232 - query_args          : None
+[2025-06-23 06:51:58,862] INFO main:233 - use_rag             : False
+[2025-06-23 06:51:58,862] INFO main:234 - ------ Config Settings -------
+[2025-06-23 06:51:58,862] INFO main:236 - cleaned_text_directory        : data/cleaned_text
+[2025-06-23 06:51:58,863] INFO main:236 - collection_name               : collections
+[2025-06-23 06:51:58,874] INFO main:236 - embedding_model_name          : sentence-transformers/all-MiniLM-L6-v2
+[2025-06-23 06:51:58,874] INFO main:236 - embeddings_directory          : data/embeddings
+[2025-06-23 06:51:58,875] INFO main:236 - llm_api_url                   : http://127.0.0.1:1234
+[2025-06-23 06:51:58,875] INFO main:236 - llm_model_name                : llama-3.2-1b-instruct
+[2025-06-23 06:51:58,876] INFO main:236 - log_level                     : DEBUG
+[2025-06-23 06:51:58,876] INFO main:236 - raw_input_directory           : data/raw_input
+[2025-06-23 06:51:58,877] INFO main:236 - retriever_min_score_threshold : 3.5
+[2025-06-23 06:51:58,878] INFO main:236 - vectordb_directory            : data/vectordb
+[2025-06-23 06:51:58,878] INFO main:237 - ------------------------------
+[2025-06-23 06:51:58,881] INFO main:55 - Ensured directory exists: data\raw_input
+[2025-06-23 06:51:58,882] INFO main:55 - Ensured directory exists: data\cleaned_text
+[2025-06-23 06:51:58,884] INFO main:55 - Ensured directory exists: data\embeddings
+[2025-06-23 06:51:58,885] INFO main:55 - Ensured directory exists: data\vectordb
+[2025-06-23 06:51:58,885] INFO main:92 - [Step 03] Vector storage started.
+[2025-06-23 06:51:58,886] INFO main:95 - Deleting existing vectordb
+[2025-06-23 06:51:58,911] ERROR main:253 - Pipeline crashed during execution.
+Traceback (most recent call last):
+  File "C:\Users\Helen Zegarra\OneDrive\Documents\Desktop\AI class projects\iot-rag\main.py", line 250, in main
+    steps[args.step](args)
+  File "C:\Users\Helen Zegarra\OneDrive\Documents\Desktop\AI class projects\iot-rag\main.py", line 104, in step03_store_vectors
+    loader = EmbeddingLoader(
+  File "C:\Users\Helen Zegarra\OneDrive\Documents\Desktop\AI class projects\iot-rag\classes\embedding_loader.py", line 26, in __init__
+    self.client = Client(Settings(
+  File "C:\Users\Helen Zegarra\AppData\Local\Programs\Python\Python310\lib\site-packages\chromadb\__init__.py", line 371, in Client
+    return ClientCreator(tenant=tenant, database=database, settings=settings)
+  File "C:\Users\Helen Zegarra\AppData\Local\Programs\Python\Python310\lib\site-packages\chromadb\api\client.py", line 65, in __init__
+    super().__init__(settings=settings)
+  File "C:\Users\Helen Zegarra\AppData\Local\Programs\Python\Python310\lib\site-packages\chromadb\api\shared_system_client.py", line 19, in __init__
+    SharedSystemClient._create_system_if_not_exists(self._identifier, settings)
+  File "C:\Users\Helen Zegarra\AppData\Local\Programs\Python\Python310\lib\site-packages\chromadb\api\shared_system_client.py", line 26, in _create_system_if_not_exists
+    new_system = System(settings)
+  File "C:\Users\Helen Zegarra\AppData\Local\Programs\Python\Python310\lib\site-packages\chromadb\config.py", line 385, in __init__
+    if settings[key] is not None:
+  File "C:\Users\Helen Zegarra\AppData\Local\Programs\Python\Python310\lib\site-packages\chromadb\config.py", line 319, in __getitem__
+    raise ValueError(LEGACY_ERROR)
+ValueError: [91mYou are using a deprecated configuration of Chroma.
+
+[94mIf you do not have data you wish to migrate, you only need to change how you construct
+your Chroma client. Please see the "New Clients" section of https://docs.trychroma.com/deployment/migration.
+________________________________________________________________________________________________
+
+If you do have data you wish to migrate, we have a migration tool you can use in order to
+migrate your data to the new Chroma architecture.
+Please `pip install chroma-migrate` and run `chroma-migrate` to migrate your data and then
+change how you construct your Chroma client.
+
+See https://docs.trychroma.com/deployment/migration for more information or join our discord at https://discord.gg/MMeYNTmh3x for help![0m
+[2025-06-23 06:51:58,926] INFO main:255 - RAG pipeline done

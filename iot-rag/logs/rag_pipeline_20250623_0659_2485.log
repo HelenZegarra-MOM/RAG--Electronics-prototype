@@ -1,0 +1,35 @@
+[2025-06-23 06:59:24,857] INFO main:229 - ------ Command line arguments -------
+[2025-06-23 06:59:24,858] INFO main:230 - step                : step03_store_vectors
+[2025-06-23 06:59:24,858] INFO main:231 - input_filename      : ATMEGA2560.txt
+[2025-06-23 06:59:24,858] INFO main:232 - query_args          : None
+[2025-06-23 06:59:24,859] INFO main:233 - use_rag             : False
+[2025-06-23 06:59:24,859] INFO main:234 - ------ Config Settings -------
+[2025-06-23 06:59:24,859] INFO main:236 - cleaned_text_directory        : data/cleaned_text
+[2025-06-23 06:59:24,859] INFO main:236 - collection_name               : collections
+[2025-06-23 06:59:24,870] INFO main:236 - embedding_model_name          : sentence-transformers/all-MiniLM-L6-v2
+[2025-06-23 06:59:24,870] INFO main:236 - embeddings_directory          : data/embeddings
+[2025-06-23 06:59:24,870] INFO main:236 - llm_api_url                   : http://127.0.0.1:1234
+[2025-06-23 06:59:24,871] INFO main:236 - llm_model_name                : llama-3.2-1b-instruct
+[2025-06-23 06:59:24,871] INFO main:236 - log_level                     : DEBUG
+[2025-06-23 06:59:24,871] INFO main:236 - raw_input_directory           : data/raw_input
+[2025-06-23 06:59:24,871] INFO main:236 - retriever_min_score_threshold : 3.5
+[2025-06-23 06:59:24,872] INFO main:236 - vectordb_directory            : data/vectordb
+[2025-06-23 06:59:24,872] INFO main:237 - ------------------------------
+[2025-06-23 06:59:24,872] INFO main:55 - Ensured directory exists: data\raw_input
+[2025-06-23 06:59:24,873] INFO main:55 - Ensured directory exists: data\cleaned_text
+[2025-06-23 06:59:24,873] INFO main:55 - Ensured directory exists: data\embeddings
+[2025-06-23 06:59:24,874] INFO main:55 - Ensured directory exists: data\vectordb
+[2025-06-23 06:59:24,874] INFO main:92 - [Step 03] Vector storage started.
+[2025-06-23 06:59:24,874] INFO main:95 - Deleting existing vectordb
+[2025-06-23 06:59:24,875] ERROR utilities:37 - Error deleting directory data/vectordb: [WinError 5] Access is denied: 'data/vectordb'
+[2025-06-23 06:59:24,906] INFO posthog:22 - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[2025-06-23 06:59:25,072] ERROR main:253 - Pipeline crashed during execution.
+Traceback (most recent call last):
+  File "C:\Users\Helen Zegarra\OneDrive\Documents\Desktop\AI class projects\iot-rag\main.py", line 250, in main
+    steps[args.step](args)
+  File "C:\Users\Helen Zegarra\OneDrive\Documents\Desktop\AI class projects\iot-rag\main.py", line 111, in step03_store_vectors
+    loader.process_files()
+  File "C:\Users\Helen Zegarra\OneDrive\Documents\Desktop\AI class projects\iot-rag\classes\embedding_loader.py", line 35, in process_files
+    embeddings = embedding_data["embeddings"]
+TypeError: list indices must be integers or slices, not str
+[2025-06-23 06:59:25,073] INFO main:255 - RAG pipeline done

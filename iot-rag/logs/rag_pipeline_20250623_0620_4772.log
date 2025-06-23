@@ -1,0 +1,27 @@
+[2025-06-23 06:20:47,731] INFO main:206 - ------ Command line arguments -------
+[2025-06-23 06:20:47,731] INFO main:207 - step                : step02_generate_embeddings
+[2025-06-23 06:20:47,732] INFO main:208 - input_filename      : ATMEGA2560.txt
+[2025-06-23 06:20:47,732] INFO main:209 - query_args          : None
+[2025-06-23 06:20:47,732] INFO main:210 - use_rag             : False
+[2025-06-23 06:20:47,732] INFO main:211 - ------ Config Settings -------
+[2025-06-23 06:20:47,732] INFO main:213 - cleaned_text_directory        : data/cleaned_text
+[2025-06-23 06:20:47,743] INFO main:213 - collection_name               : collections
+[2025-06-23 06:20:47,743] INFO main:213 - embedding_model_name          : sentence-transformers/all-MiniLM-L6-v2
+[2025-06-23 06:20:47,744] INFO main:213 - embeddings_directory          : data/embeddings
+[2025-06-23 06:20:47,744] INFO main:213 - llm_api_url                   : http://127.0.0.1:1234
+[2025-06-23 06:20:47,744] INFO main:213 - llm_model_name                : llama-3.2-1b-instruct
+[2025-06-23 06:20:47,744] INFO main:213 - log_level                     : DEBUG
+[2025-06-23 06:20:47,744] INFO main:213 - raw_input_directory           : data/raw_input
+[2025-06-23 06:20:47,744] INFO main:213 - retriever_min_score_threshold : 2.5
+[2025-06-23 06:20:47,744] INFO main:213 - vectordb_directory            : data/vectordb
+[2025-06-23 06:20:47,744] INFO main:214 - ------------------------------
+[2025-06-23 06:20:47,746] INFO main:52 - Ensured directory exists: data\raw_input
+[2025-06-23 06:20:47,746] INFO main:52 - Ensured directory exists: data\cleaned_text
+[2025-06-23 06:20:47,747] INFO main:52 - Ensured directory exists: data\embeddings
+[2025-06-23 06:20:47,747] INFO main:52 - Ensured directory exists: data\vectordb
+[2025-06-23 06:20:47,747] INFO main:70 - [Step 02] Embedding generation started.
+[2025-06-23 06:20:54,216] INFO embedding_preparer:26 - Loaded model/tokenizer: sentence-transformers/all-MiniLM-L6-v2 on cpu
+[2025-06-23 06:20:54,217] INFO embedding_preparer:46 - Processing: data\cleaned_text\ATMEGA2560.txt
+[2025-06-23 06:20:54,352] INFO embedding_preparer:85 - Saved embedding: data\embeddings\ATMEGA2560_embeddings.json
+[2025-06-23 06:20:54,354] INFO main:83 - [Step 02] Embedding generation completed.
+[2025-06-23 06:20:54,365] INFO main:232 - RAG pipeline done

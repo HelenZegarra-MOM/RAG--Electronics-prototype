@@ -1,0 +1,39 @@
+[2025-06-22 22:44:38,443] INFO main:195 - ------ Command line arguments -------
+[2025-06-22 22:44:38,443] INFO main:196 - step                                              : step02_generate_embeddings
+[2025-06-22 22:44:38,443] INFO main:197 - input_filename                                    : all
+[2025-06-22 22:44:38,444] INFO main:198 - query_args                                        : None
+[2025-06-22 22:44:38,444] INFO main:199 - use_rag                                           : False
+[2025-06-22 22:44:38,444] INFO main:200 - ------ Config Settings -------
+[2025-06-22 22:44:38,444] INFO main:202 - cleaned_text_directory                            : data/cleaned_text
+[2025-06-22 22:44:38,444] INFO main:202 - collection_name                                   : collections
+[2025-06-22 22:44:38,445] INFO main:202 - embedding_model_name                              : sentence-transformers/all-MiniLM-L6-v2
+[2025-06-22 22:44:38,445] INFO main:202 - embeddings_directory                              : data/embeddings
+[2025-06-22 22:44:38,445] INFO main:202 - llm_api_url                                       : http://127.0.0.1:1234
+[2025-06-22 22:44:38,445] INFO main:202 - llm_model_name                                    : llama-3.2-1b-instruct
+[2025-06-22 22:44:38,445] INFO main:202 - log_level                                         : debug
+[2025-06-22 22:44:38,445] INFO main:202 - raw_input_directory                               : data/raw_input
+[2025-06-22 22:44:38,445] INFO main:202 - retriever_min_score_threshold                     : 0.5
+[2025-06-22 22:44:38,446] INFO main:202 - vectordb_directory                                : data/vectordb
+[2025-06-22 22:44:38,446] INFO main:203 - ------------------------------
+[2025-06-22 22:44:38,446] INFO main:46 - Ensured directory exists: data\raw_input
+[2025-06-22 22:44:38,446] INFO main:46 - Ensured directory exists: data\cleaned_text
+[2025-06-22 22:44:38,447] INFO main:46 - Ensured directory exists: data\embeddings
+[2025-06-22 22:44:38,447] INFO main:46 - Ensured directory exists: data\vectordb
+[2025-06-22 22:44:38,447] INFO main:67 - [Step 02] Embedding generation started.
+[2025-06-22 22:44:41,215] INFO embedding_preparer:29 - Loaded tokenizer and model: sentence-transformers/all-MiniLM-L6-v2 on cpu
+[2025-06-22 22:44:41,216] INFO embedding_preparer:55 - Processing file: data\cleaned_text\A000062-datasheet_cleaned.txt
+[2025-06-22 22:44:41,528] INFO embedding_preparer:93 - Saved embeddings to data\embeddings\A000062-datasheet_cleaned_embeddings.json
+[2025-06-22 22:44:41,529] INFO embedding_preparer:55 - Processing file: data\cleaned_text\ABX00030-datasheet_cleaned.txt
+[2025-06-22 22:44:41,627] INFO embedding_preparer:93 - Saved embeddings to data\embeddings\ABX00030-datasheet_cleaned_embeddings.json
+[2025-06-22 22:44:41,628] INFO embedding_preparer:55 - Processing file: data\cleaned_text\ABX00080-datasheet_cleaned.txt
+[2025-06-22 22:44:41,739] INFO embedding_preparer:93 - Saved embeddings to data\embeddings\ABX00080-datasheet_cleaned_embeddings.json
+[2025-06-22 22:44:41,739] INFO embedding_preparer:55 - Processing file: data\cleaned_text\ATMEGA2560_cleaned.txt
+[2025-06-22 22:44:41,839] INFO embedding_preparer:93 - Saved embeddings to data\embeddings\ATMEGA2560_cleaned_embeddings.json
+[2025-06-22 22:44:41,839] INFO embedding_preparer:55 - Processing file: data\cleaned_text\ATMEGA328P_cleaned.txt
+[2025-06-22 22:44:41,882] INFO embedding_preparer:93 - Saved embeddings to data\embeddings\ATMEGA328P_cleaned_embeddings.json
+[2025-06-22 22:44:41,882] INFO embedding_preparer:55 - Processing file: data\cleaned_text\ESP32_cleaned.txt
+[2025-06-22 22:44:41,909] INFO embedding_preparer:93 - Saved embeddings to data\embeddings\ESP32_cleaned_embeddings.json
+[2025-06-22 22:44:41,909] INFO embedding_preparer:55 - Processing file: data\cleaned_text\RP2040_cleaned.txt
+[2025-06-22 22:44:41,945] INFO embedding_preparer:93 - Saved embeddings to data\embeddings\RP2040_cleaned_embeddings.json
+[2025-06-22 22:44:41,947] INFO main:76 - [Step 02] Embedding generation completed.
+[2025-06-22 22:44:41,955] INFO main:216 - RAG pipeline done

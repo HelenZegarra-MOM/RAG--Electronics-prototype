@@ -1,0 +1,1 @@
+{"source_file": "ABX00080-datasheet_chunk9.txt", "text_preview": "to 5 v. the vusb, barrel jack connector and vin pins are connected to the isl854102frz buck converter, with schottky diodes in place for reverse polarity & overvoltage protection respectively. power via usb supplies about ~ 4. 7 v ( due to schottky drop ) to the ra4m1 microcontroller. arduino uno r4"}

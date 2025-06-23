@@ -1,0 +1,1 @@
+{"source_file": "A000062-datasheet_chunk11.txt", "text_preview": "##ino due modified : 19 / 06 / 2025 6. 2. 2 board ' s 26 - pin header pin function type description 1 d21 / scl1 digital gpio 21 / i2c 1 clock 2 d20 / sda1 digital gpio 20 / i2c 1 dataline 3 aref digital analog reference voltage 4 gnd power ground 5 d13 / sck digital gpio 13 / spi clock ( pwm ~ ) 6 "}

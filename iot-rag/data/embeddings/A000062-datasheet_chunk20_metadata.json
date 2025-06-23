@@ -1,0 +1,1 @@
+{"source_file": "A000062-datasheet_chunk20.txt", "text_preview": "2 ( pwm ~ ) 17 d1 / tx0 digital gpio 1 / serial 0 transmitter 18 d0 / tx0 digital gpio 0 / serial 0 receiver 19 d14 / tx3 digital gpio 14 / serial 3 transmitter 20 d15 / rx3 digital gpio 15 / serial 3 receiver 21 d16 / tx2 digital gpio 16 / serial 2 transmitter 22 d17 / rx2 digital gpio 17 / serial "}

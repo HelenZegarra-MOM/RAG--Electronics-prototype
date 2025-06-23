@@ -1,0 +1,1 @@
+{"source_file": "A000062-datasheet_chunk17.txt", "text_preview": "board to be programmed and powered via a usb connection to a computer. it facilitates serial communication between the arduino due and the computer, enabling the uploading of sketches and interaction with the arduino ide. the port is connected to the atmega16u2 microcontroller, which acts as a usb -"}

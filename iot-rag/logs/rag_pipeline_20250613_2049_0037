@@ -1,0 +1,49 @@
+[2025-06-13 20:49:00,377] INFO main:192 - ------ Command line arguments -------
+[2025-06-13 20:49:00,377] INFO main:193 - step                                              : step05_generate_response
+[2025-06-13 20:49:00,378] INFO main:194 - input_filename                                    : None
+[2025-06-13 20:49:00,378] INFO main:195 - query_args                                        :  What is the best timeline tool for a project?
+[2025-06-13 20:49:00,378] INFO main:196 - use_rag                                           : True
+[2025-06-13 20:49:00,379] INFO main:197 - ------ Config Settings -------
+[2025-06-13 20:49:00,379] INFO main:199 - cleaned_text_directory                            : data/cleaned_text
+[2025-06-13 20:49:00,379] INFO main:199 - collection_name                                   : collections
+[2025-06-13 20:49:00,380] INFO main:199 - embedding_model_name                              : sentence-transformers/all-MiniLM-L6-v2
+[2025-06-13 20:49:00,380] INFO main:199 - embeddings_directory                              : data/embeddings
+[2025-06-13 20:49:00,380] INFO main:199 - llm_api_url                                       : http://127.0.0.1:1234
+[2025-06-13 20:49:00,380] INFO main:199 - llm_model_name                                    : llama-3.2-1b-instruct
+[2025-06-13 20:49:00,380] INFO main:199 - log_level                                         : debug
+[2025-06-13 20:49:00,380] INFO main:199 - raw_input_directory                               : data/raw_input
+[2025-06-13 20:49:00,380] INFO main:199 - retriever_min_score_threshold                     : 0.5
+[2025-06-13 20:49:00,380] INFO main:199 - vectordb_directory                                : data/vectordb
+[2025-06-13 20:49:00,380] INFO main:200 - ------------------------------
+[2025-06-13 20:49:00,381] INFO main:46 - Ensured directory exists: data\raw_input
+[2025-06-13 20:49:00,381] INFO main:46 - Ensured directory exists: data\cleaned_text
+[2025-06-13 20:49:00,381] INFO main:46 - Ensured directory exists: data\embeddings
+[2025-06-13 20:49:00,382] INFO main:46 - Ensured directory exists: data\vectordb
+[2025-06-13 20:49:00,382] INFO main:131 - [Step 05] Response generation started.
+[2025-06-13 20:49:00,382] INFO llm_client:15 - Initialized LLMClient: llm_api_url: http://127.0.0.1:1234/v1/chat/completions, model_name: llama-3.2-1b-instruct
+[2025-06-13 20:49:00,405] INFO posthog:22 - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[2025-06-13 20:49:00,496] INFO SentenceTransformer:211 - Use pytorch device_name: cpu
+[2025-06-13 20:49:00,497] INFO SentenceTransformer:219 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+[2025-06-13 20:49:03,463] INFO chromadb_retriever:22 - Initialized ChromaDBRetriever: embedding_model_name: sentence-transformers/all-MiniLM-L6-v2, collection_name: collections, score_threshold: 0.5
+[2025-06-13 20:49:03,463] INFO rag_query_processor:18 - Initialized RAGQueryProcessor: use_rag: True
+[2025-06-13 20:49:03,463] DEBUG rag_query_processor:24 - Received query:  What is the best timeline tool for a project?
+[2025-06-13 20:49:03,463] INFO rag_query_processor:28 - --------------------------------------------------------------------------------
+[2025-06-13 20:49:03,463] INFO rag_query_processor:29 - Using RAG pipeline...
+[2025-06-13 20:49:03,525] INFO rag_query_processor:36 - ID: Beyond the Spreadsheets_ Quality Project Management_cleaned.txt
+[2025-06-13 20:49:03,526] INFO rag_query_processor:37 - Score: 3.5294
+[2025-06-13 20:49:03,526] INFO rag_query_processor:40 - Document: 
+[2025-06-13 20:49:03,526] INFO rag_query_processor:41 - Context: published date : november / december 2020 title : beyond the spreadsheets : quality project management authors : rachael vernon waters, dr. syed adeel ahmed summary : this paper examines the limitations of project management tools and software in addressing critical human and strategic factors that 
+[2025-06-13 20:49:03,526] INFO rag_query_processor:42 - --------------------------------------------------------------------------------
+[2025-06-13 20:49:03,526] DEBUG rag_query_processor:56 - Prompt to LLM: 
+        You are an AI assistant answering user queries using retrieved context.
+        If the context is insufficient, say 'I don't know'. 
+
+        Context:
+        published date : november / december 2020 title : beyond the spreadsheets : quality project management authors : rachael vernon waters, dr. syed adeel ahmed summary : this paper examines the limitations of project management tools and software in addressing critical human and strategic factors that 
+
+        Question:
+         What is the best timeline tool for a project?
+        
+[2025-06-13 20:49:05,871] DEBUG rag_query_processor:59 - LLM Response: I don't know. The context provided discusses "Beyond the Spreadsheets: Quality Project Management" by Rachael Vernon Waters and Dr. Syed Adeel Ahmed, but it does not mention specific tools or software related to project timelines. If you're looking for recommendations on timeline tools, I'd be happy to help with more general information.
+[2025-06-13 20:49:05,871] INFO main:150 - [Step 05] Response generation completed.
+[2025-06-13 20:49:05,871] INFO main:213 - RAG pipeline done

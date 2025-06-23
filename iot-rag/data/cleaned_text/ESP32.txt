@@ -1,0 +1,18 @@
+ESP32-WROOM-32 Datasheet
+1. Microcontroller Specifications:
+Type: ESP32
+Memory: 4MB Flash, 520KB SRAM. No EEPROM.
+Clock Speed: 240 MHz. Features include various security features like encryption.
+Peripherals: Wi-Fi, Bluetooth, UART, SPI, I2C, I2S, 18x ADC, 2x DAC, Timers, PWM.
+2. Pin Configurations:
+GPIO Pins: 34 digital.
+Analog Input Pins: 18.
+Power Pins: 3.3V, GND. Communication: SPI, I2C.
+Reset Pin.
+3. Power Requirements:
+Operating Voltage: 2.3V - 3.6V. Input Voltage: 5V.
+4. Programming Interface:
+USB-to-Serial converter. Supports JTAG and Bootloader programming.
+5. Additional Information:
+Interrupts: All GPIOs can be configured for interrupts. PWM Channels: 16.
+Download the full datasheet here.

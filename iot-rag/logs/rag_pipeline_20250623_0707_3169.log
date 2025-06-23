@@ -1,0 +1,27 @@
+[2025-06-23 07:07:31,695] INFO main:195 - Running step: step01_ingest
+[2025-06-23 07:07:31,695] INFO main:196 - Input file: ATMEGA2560.txt
+[2025-06-23 07:07:31,696] INFO main:197 - Query: None
+[2025-06-23 07:07:31,696] INFO main:198 - Config loaded from: config.json
+[2025-06-23 07:07:31,696] INFO main:47 - Ensured directory exists: data\raw_input
+[2025-06-23 07:07:31,697] INFO main:47 - Ensured directory exists: data\cleaned_text
+[2025-06-23 07:07:31,697] INFO main:47 - Ensured directory exists: data\embeddings
+[2025-06-23 07:07:31,697] INFO main:47 - Ensured directory exists: data\vectordb
+[2025-06-23 07:07:31,709] INFO main:50 - [Step 01] Document ingestion started.
+[2025-06-23 07:07:31,711] INFO SentenceTransformer:211 - Use pytorch device_name: cpu
+[2025-06-23 07:07:31,712] INFO SentenceTransformer:219 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+[2025-06-23 07:07:31,717] DEBUG connectionpool:1003 - Starting new HTTPS connection (1): huggingface.co:443
+[2025-06-23 07:07:32,164] DEBUG connectionpool:456 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 200 0
+[2025-06-23 07:07:32,327] DEBUG connectionpool:456 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 200 0
+[2025-06-23 07:07:32,498] DEBUG connectionpool:456 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 200 0
+[2025-06-23 07:07:32,672] DEBUG connectionpool:456 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 200 0
+[2025-06-23 07:07:32,831] DEBUG connectionpool:456 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 200 0
+[2025-06-23 07:07:33,011] DEBUG connectionpool:456 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+[2025-06-23 07:07:33,180] DEBUG connectionpool:456 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 200 0
+[2025-06-23 07:07:34,848] DEBUG connectionpool:456 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+[2025-06-23 07:07:35,021] DEBUG connectionpool:456 - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+[2025-06-23 07:07:35,261] DEBUG connectionpool:456 - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/revision/main HTTP/1.1" 200 6863
+[2025-06-23 07:07:35,454] DEBUG connectionpool:456 - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/1.1" 200 6863
+[2025-06-23 07:07:37,412] INFO document_ingestor:38 - 📥 Ingested ATMEGA2560.txt into collection 'collections'
+[2025-06-23 07:07:37,413] INFO document_ingestor:39 - ✅ Document ingestion completed.
+[2025-06-23 07:07:37,413] INFO main:60 - [Step 01] Document ingestion completed.
+[2025-06-23 07:07:37,413] INFO main:216 - RAG pipeline done

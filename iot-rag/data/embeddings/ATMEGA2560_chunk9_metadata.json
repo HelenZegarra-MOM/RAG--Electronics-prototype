@@ -1,0 +1,1 @@
+{"source_file": "ATMEGA2560_chunk9.txt", "text_preview": "digital pin function type description 1 d21 / scl digital input / i2c digital input 21 / i2c dataline 2 d20 / sda digital input / i2c digital input 20 / i2c dataline 3 aref digital analog reference voltage 4 gnd power ground 5 d13 digital / gpio digital input 13 / gpio 6 d12 digital / gpio digital i"}

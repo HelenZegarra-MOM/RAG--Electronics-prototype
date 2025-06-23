@@ -1,0 +1,1 @@
+{"source_file": "ABX00030-datasheet_chunk9.txt", "text_preview": "as gpio 8 a4 / sda analog adc in ; i2c sda ; can be used as gpio ( 1 ) 9 a5 / scl analog adc in ; i2c scl ; can be used as gpio ( 1 ) 10 a6 analog adc in ; can be used as gpio 11 a7 analog adc in ; can be used as gpio 12 vusb power in / out normally nc ; can be connected to vusb pin of the usb conne"}

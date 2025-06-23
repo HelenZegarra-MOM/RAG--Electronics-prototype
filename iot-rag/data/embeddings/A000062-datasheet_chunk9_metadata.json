@@ -1,0 +1,1 @@
+{"source_file": "A000062-datasheet_chunk9.txt", "text_preview": "3. 3 v power rail. varef is for the analog logic. arduino due 7 / 50 arduino due modified : 19 / 06 / 2025 5. 2 power specification property min typ max unit supply voltage 7. 0 - 12 v permissible range 6. 0 - 16 v safety note : unlike most traditional arduino boards, the arduino due board runs at 3"}

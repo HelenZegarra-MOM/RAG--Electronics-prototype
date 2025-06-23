@@ -1,0 +1,49 @@
+[2025-06-12 18:29:23,240] INFO main:192 - ------ Command line arguments -------
+[2025-06-12 18:29:23,241] INFO main:193 - step                                              : step01_ingest
+[2025-06-12 18:29:23,241] INFO main:194 - input_filename                                    : all
+[2025-06-12 18:29:23,241] INFO main:195 - query_args                                        : None
+[2025-06-12 18:29:23,241] INFO main:196 - use_rag                                           : False
+[2025-06-12 18:29:23,242] INFO main:197 - ------ Config Settings -------
+[2025-06-12 18:29:23,242] INFO main:199 - cleaned_text_directory                            : data/cleaned_text
+[2025-06-12 18:29:23,253] INFO main:199 - collection_name                                   : collections
+[2025-06-12 18:29:23,253] INFO main:199 - embedding_model_name                              : sentence-transformers/all-MiniLM-L6-v2
+[2025-06-12 18:29:23,253] INFO main:199 - embeddings_directory                              : data/embeddings
+[2025-06-12 18:29:23,253] INFO main:199 - llm_api_url                                       : http://localhost:1234/v1/completions
+[2025-06-12 18:29:23,253] INFO main:199 - llm_model_name                                    : llama-3.2-1b-instruct
+[2025-06-12 18:29:23,253] INFO main:199 - log_level                                         : debug
+[2025-06-12 18:29:23,254] INFO main:199 - raw_input_directory                               : data/raw_input
+[2025-06-12 18:29:23,254] INFO main:199 - retriever_min_score_threshold                     : 0.5
+[2025-06-12 18:29:23,254] INFO main:199 - vectordb_directory                                : data/vectordb
+[2025-06-12 18:29:23,254] INFO main:200 - ------------------------------
+[2025-06-12 18:29:23,255] INFO main:46 - Ensured directory exists: data\raw_input
+[2025-06-12 18:29:23,256] INFO main:46 - Ensured directory exists: data\cleaned_text
+[2025-06-12 18:29:23,256] INFO main:46 - Ensured directory exists: data\embeddings
+[2025-06-12 18:29:23,257] INFO main:46 - Ensured directory exists: data\vectordb
+[2025-06-12 18:29:23,257] INFO main:51 - [Step 01] Document ingestion started.
+[2025-06-12 18:29:23,687] DEBUG _api:331 - Attempting to acquire lock 1698906911024 on C:\Users\Helen Zegarra\.cache\huggingface\hub\.locks\models--sentence-transformers--all-MiniLM-L6-v2\c79f2b6a0cea6f4b564fed1938984bace9d30ff0.lock
+[2025-06-12 18:29:23,688] DEBUG _api:334 - Lock 1698906911024 acquired on C:\Users\Helen Zegarra\.cache\huggingface\hub\.locks\models--sentence-transformers--all-MiniLM-L6-v2\c79f2b6a0cea6f4b564fed1938984bace9d30ff0.lock
+[2025-06-12 18:29:23,899] DEBUG _api:364 - Attempting to release lock 1698906911024 on C:\Users\Helen Zegarra\.cache\huggingface\hub\.locks\models--sentence-transformers--all-MiniLM-L6-v2\c79f2b6a0cea6f4b564fed1938984bace9d30ff0.lock
+[2025-06-12 18:29:23,899] DEBUG _api:367 - Lock 1698906911024 released on C:\Users\Helen Zegarra\.cache\huggingface\hub\.locks\models--sentence-transformers--all-MiniLM-L6-v2\c79f2b6a0cea6f4b564fed1938984bace9d30ff0.lock
+[2025-06-12 18:29:24,058] DEBUG _api:331 - Attempting to acquire lock 1698906911024 on C:\Users\Helen Zegarra\.cache\huggingface\hub\.locks\models--sentence-transformers--all-MiniLM-L6-v2\fb140275c155a9c7c5a3b3e0e77a9e839594a938.lock
+[2025-06-12 18:29:24,059] DEBUG _api:334 - Lock 1698906911024 acquired on C:\Users\Helen Zegarra\.cache\huggingface\hub\.locks\models--sentence-transformers--all-MiniLM-L6-v2\fb140275c155a9c7c5a3b3e0e77a9e839594a938.lock
+[2025-06-12 18:29:24,522] DEBUG _api:364 - Attempting to release lock 1698906911024 on C:\Users\Helen Zegarra\.cache\huggingface\hub\.locks\models--sentence-transformers--all-MiniLM-L6-v2\fb140275c155a9c7c5a3b3e0e77a9e839594a938.lock
+[2025-06-12 18:29:24,522] DEBUG _api:367 - Lock 1698906911024 released on C:\Users\Helen Zegarra\.cache\huggingface\hub\.locks\models--sentence-transformers--all-MiniLM-L6-v2\fb140275c155a9c7c5a3b3e0e77a9e839594a938.lock
+[2025-06-12 18:29:24,682] DEBUG _api:331 - Attempting to acquire lock 1698906912560 on C:\Users\Helen Zegarra\.cache\huggingface\hub\.locks\models--sentence-transformers--all-MiniLM-L6-v2\cb202bfe2e3c98645018a6d12f182a434c9d3e02.lock
+[2025-06-12 18:29:24,683] DEBUG _api:334 - Lock 1698906912560 acquired on C:\Users\Helen Zegarra\.cache\huggingface\hub\.locks\models--sentence-transformers--all-MiniLM-L6-v2\cb202bfe2e3c98645018a6d12f182a434c9d3e02.lock
+[2025-06-12 18:29:25,253] DEBUG _api:364 - Attempting to release lock 1698906912560 on C:\Users\Helen Zegarra\.cache\huggingface\hub\.locks\models--sentence-transformers--all-MiniLM-L6-v2\cb202bfe2e3c98645018a6d12f182a434c9d3e02.lock
+[2025-06-12 18:29:25,254] DEBUG _api:367 - Lock 1698906912560 released on C:\Users\Helen Zegarra\.cache\huggingface\hub\.locks\models--sentence-transformers--all-MiniLM-L6-v2\cb202bfe2e3c98645018a6d12f182a434c9d3e02.lock
+[2025-06-12 18:29:26,734] DEBUG _api:331 - Attempting to acquire lock 1698906907472 on C:\Users\Helen Zegarra\.cache\huggingface\hub\.locks\models--sentence-transformers--all-MiniLM-L6-v2\e7b0375001f109a6b8873d756ad4f7bbb15fbaa5.lock
+[2025-06-12 18:29:26,745] DEBUG _api:334 - Lock 1698906907472 acquired on C:\Users\Helen Zegarra\.cache\huggingface\hub\.locks\models--sentence-transformers--all-MiniLM-L6-v2\e7b0375001f109a6b8873d756ad4f7bbb15fbaa5.lock
+[2025-06-12 18:29:27,240] DEBUG _api:364 - Attempting to release lock 1698906907472 on C:\Users\Helen Zegarra\.cache\huggingface\hub\.locks\models--sentence-transformers--all-MiniLM-L6-v2\e7b0375001f109a6b8873d756ad4f7bbb15fbaa5.lock
+[2025-06-12 18:29:27,242] DEBUG _api:367 - Lock 1698906907472 released on C:\Users\Helen Zegarra\.cache\huggingface\hub\.locks\models--sentence-transformers--all-MiniLM-L6-v2\e7b0375001f109a6b8873d756ad4f7bbb15fbaa5.lock
+[2025-06-12 18:29:27,434] INFO document_ingestor:27 - Initialized DocumentIngestor: input_dir: data\raw_inputoutput_dir: data\cleaned_text, embedding_model_name: sentence-transformers/all-MiniLM-L6-v2
+[2025-06-12 18:29:27,435] INFO document_ingestor:69 - Processing file: data\raw_input\Creating Business Domain Concepts in Regional Projects_ In the Case of Japan-1 (1).pdf
+[2025-06-12 18:29:27,767] INFO document_ingestor:84 - Saved cleaned text to data\cleaned_text\Creating Business Domain Concepts in Regional Projects_ In the Case of Japan-1 (1)_cleaned.txt
+[2025-06-12 18:29:27,767] INFO document_ingestor:69 - Processing file: data\raw_input\Creating Business Domain Concepts in Regional Projects_ In the Case of Japan-1.pdf
+[2025-06-12 18:29:28,097] INFO document_ingestor:84 - Saved cleaned text to data\cleaned_text\Creating Business Domain Concepts in Regional Projects_ In the Case of Japan-1_cleaned.txt
+[2025-06-12 18:29:28,097] INFO document_ingestor:69 - Processing file: data\raw_input\On Stupidity in Project Management.pdf
+[2025-06-12 18:29:28,426] INFO document_ingestor:84 - Saved cleaned text to data\cleaned_text\On Stupidity in Project Management_cleaned.txt
+[2025-06-12 18:29:28,426] INFO document_ingestor:69 - Processing file: data\raw_input\Seven Failure Points When Engineering a Retrieval Augmented Generation System.pdf
+[2025-06-12 18:29:28,726] INFO document_ingestor:84 - Saved cleaned text to data\cleaned_text\Seven Failure Points When Engineering a Retrieval Augmented Generation System_cleaned.txt
+[2025-06-12 18:29:28,726] INFO main:60 - [Step 01] Document ingestion completed.
+[2025-06-12 18:29:28,730] INFO main:213 - RAG pipeline done

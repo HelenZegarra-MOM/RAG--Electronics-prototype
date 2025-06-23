@@ -1,0 +1,1 @@
+{"source_file": "ATMEGA328P.txt", "text_preview": "Arduino Uno R3 Datasheet\n1. Microcontroller Specifications:\nType: ATmega328P\nMemory: 32KB Flash, 2KB SRAM, 1KB EEPROM.\nClock Speed: 16 MHz. Features include POR and BOD.\nPeripherals: UART, SPI, I2C, 6x ADC, 3 Timers.\n2. Pin Configurations:\nDigital I/O Pins: 14 (6 with PWM output).\nAnalog Input Pins:"}

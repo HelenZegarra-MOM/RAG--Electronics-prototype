@@ -1,0 +1,1 @@
+{"source_file": "ABX00030-datasheet_chunk10.txt", "text_preview": "be used as pwm 24 d6 / pwm digital gpio, can be used as pwm 25 d7 digital gpio 26 d8 digital gpio 27 d9 / pwm digital gpio ; can be used as pwm 28 d10 / pwm digital gpio ; can be used as pwm 29 d11 / mosi digital spi mosi ; can be used as gpio 30 d12 / miso digital spi miso ; can be used as gpio 4. "}

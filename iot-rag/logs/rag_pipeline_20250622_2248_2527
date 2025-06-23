@@ -1,0 +1,43 @@
+[2025-06-22 22:48:25,273] INFO main:201 - ------ Command line arguments -------
+[2025-06-22 22:48:25,273] INFO main:202 - step                                              : step03_store_vectors
+[2025-06-22 22:48:25,274] INFO main:203 - input_filename                                    : None
+[2025-06-22 22:48:25,274] INFO main:204 - query_args                                        : None
+[2025-06-22 22:48:25,274] INFO main:205 - use_rag                                           : False
+[2025-06-22 22:48:25,274] INFO main:206 - ------ Config Settings -------
+[2025-06-22 22:48:25,275] INFO main:208 - cleaned_text_directory                            : data/cleaned_text
+[2025-06-22 22:48:25,285] INFO main:208 - collection_name                                   : collections
+[2025-06-22 22:48:25,285] INFO main:208 - embedding_model_name                              : sentence-transformers/all-MiniLM-L6-v2
+[2025-06-22 22:48:25,285] INFO main:208 - embeddings_directory                              : data/embeddings
+[2025-06-22 22:48:25,285] INFO main:208 - llm_api_url                                       : http://127.0.0.1:1234
+[2025-06-22 22:48:25,286] INFO main:208 - llm_model_name                                    : llama-3.2-1b-instruct
+[2025-06-22 22:48:25,286] INFO main:208 - log_level                                         : debug
+[2025-06-22 22:48:25,286] INFO main:208 - raw_input_directory                               : data/raw_input
+[2025-06-22 22:48:25,286] INFO main:208 - retriever_min_score_threshold                     : 0.5
+[2025-06-22 22:48:25,286] INFO main:208 - vectordb_directory                                : data/vectordb
+[2025-06-22 22:48:25,286] INFO main:209 - ------------------------------
+[2025-06-22 22:48:25,287] INFO main:46 - Ensured directory exists: data\raw_input
+[2025-06-22 22:48:25,287] INFO main:46 - Ensured directory exists: data\cleaned_text
+[2025-06-22 22:48:25,288] INFO main:46 - Ensured directory exists: data\embeddings
+[2025-06-22 22:48:25,288] INFO main:46 - Ensured directory exists: data\vectordb
+[2025-06-22 22:48:25,288] INFO main:81 - [Step 03] Vector storage started.
+[2025-06-22 22:48:25,288] INFO main:85 - deleting existing vectordb
+[2025-06-22 22:48:25,312] INFO posthog:22 - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[2025-06-22 22:48:25,420] INFO embedding_loader:32 - Initialized ChromaDB client at data\vectordb
+[2025-06-22 22:48:25,420] INFO embedding_loader:33 - Using/created collection: collections
+[2025-06-22 22:48:25,421] INFO embedding_loader:124 - Storing 'A000062-datasheet_cleaned.txt' (Text: 39499 chars) in ChromaDB...
+[2025-06-22 22:48:25,464] INFO embedding_loader:135 - Stored 'A000062-datasheet_cleaned.txt' successfully.
+[2025-06-22 22:48:25,465] INFO embedding_loader:124 - Storing 'ABX00030-datasheet_cleaned.txt' (Text: 17153 chars) in ChromaDB...
+[2025-06-22 22:48:25,472] INFO embedding_loader:135 - Stored 'ABX00030-datasheet_cleaned.txt' successfully.
+[2025-06-22 22:48:25,473] INFO embedding_loader:124 - Storing 'ABX00080-datasheet_cleaned.txt' (Text: 24144 chars) in ChromaDB...
+[2025-06-22 22:48:25,482] INFO embedding_loader:135 - Stored 'ABX00080-datasheet_cleaned.txt' successfully.
+[2025-06-22 22:48:25,483] INFO embedding_loader:124 - Storing 'ATMEGA2560_cleaned.txt' (Text: 24405 chars) in ChromaDB...
+[2025-06-22 22:48:25,490] INFO embedding_loader:135 - Stored 'ATMEGA2560_cleaned.txt' successfully.
+[2025-06-22 22:48:25,491] INFO embedding_loader:124 - Storing 'ATMEGA328P_cleaned.txt' (Text: 774 chars) in ChromaDB...
+[2025-06-22 22:48:25,500] INFO embedding_loader:135 - Stored 'ATMEGA328P_cleaned.txt' successfully.
+[2025-06-22 22:48:25,500] INFO embedding_loader:124 - Storing 'ESP32_cleaned.txt' (Text: 737 chars) in ChromaDB...
+[2025-06-22 22:48:25,508] INFO embedding_loader:135 - Stored 'ESP32_cleaned.txt' successfully.
+[2025-06-22 22:48:25,509] INFO embedding_loader:124 - Storing 'RP2040_cleaned.txt' (Text: 833 chars) in ChromaDB...
+[2025-06-22 22:48:25,516] INFO embedding_loader:135 - Stored 'RP2040_cleaned.txt' successfully.
+[2025-06-22 22:48:25,517] INFO embedding_loader:144 - Finished processing files for ChromaDB. Processed: 7, Skipped: 0
+[2025-06-22 22:48:25,517] INFO main:103 - [Step 03] Vector storage completed.
+[2025-06-22 22:48:25,517] INFO main:222 - RAG pipeline done

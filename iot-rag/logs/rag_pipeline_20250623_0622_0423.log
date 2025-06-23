@@ -1,0 +1,28 @@
+[2025-06-23 06:22:04,239] INFO main:206 - ------ Command line arguments -------
+[2025-06-23 06:22:04,239] INFO main:207 - step                : step03_store_vectors
+[2025-06-23 06:22:04,239] INFO main:208 - input_filename      : ATMEGA2560.txt
+[2025-06-23 06:22:04,240] INFO main:209 - query_args          : None
+[2025-06-23 06:22:04,240] INFO main:210 - use_rag             : False
+[2025-06-23 06:22:04,241] INFO main:211 - ------ Config Settings -------
+[2025-06-23 06:22:04,241] INFO main:213 - cleaned_text_directory        : data/cleaned_text
+[2025-06-23 06:22:04,241] INFO main:213 - collection_name               : collections
+[2025-06-23 06:22:04,251] INFO main:213 - embedding_model_name          : sentence-transformers/all-MiniLM-L6-v2
+[2025-06-23 06:22:04,252] INFO main:213 - embeddings_directory          : data/embeddings
+[2025-06-23 06:22:04,252] INFO main:213 - llm_api_url                   : http://127.0.0.1:1234
+[2025-06-23 06:22:04,252] INFO main:213 - llm_model_name                : llama-3.2-1b-instruct
+[2025-06-23 06:22:04,252] INFO main:213 - log_level                     : DEBUG
+[2025-06-23 06:22:04,252] INFO main:213 - raw_input_directory           : data/raw_input
+[2025-06-23 06:22:04,252] INFO main:213 - retriever_min_score_threshold : 2.5
+[2025-06-23 06:22:04,253] INFO main:213 - vectordb_directory            : data/vectordb
+[2025-06-23 06:22:04,253] INFO main:214 - ------------------------------
+[2025-06-23 06:22:04,253] INFO main:52 - Ensured directory exists: data\raw_input
+[2025-06-23 06:22:04,254] INFO main:52 - Ensured directory exists: data\cleaned_text
+[2025-06-23 06:22:04,255] INFO main:52 - Ensured directory exists: data\embeddings
+[2025-06-23 06:22:04,255] INFO main:52 - Ensured directory exists: data\vectordb
+[2025-06-23 06:22:04,255] INFO main:87 - [Step 03] Vector storage started.
+[2025-06-23 06:22:04,256] INFO main:89 - Deleting existing vectordb
+[2025-06-23 06:22:04,297] INFO posthog:22 - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[2025-06-23 06:22:04,460] INFO embedding_loader:30 - Initialized ChromaDB client at data\vectordb
+[2025-06-23 06:22:04,540] INFO embedding_loader:102 - Stored: ATMEGA2560
+[2025-06-23 06:22:04,545] INFO main:106 - [Step 03] Vector storage completed.
+[2025-06-23 06:22:04,546] INFO main:232 - RAG pipeline done

@@ -1,0 +1,18 @@
+[2025-06-23 07:07:54,220] INFO main:195 - Running step: step02_generate_embeddings
+[2025-06-23 07:07:54,220] INFO main:196 - Input file: ATMEGA2560.txt
+[2025-06-23 07:07:54,221] INFO main:197 - Query: None
+[2025-06-23 07:07:54,221] INFO main:198 - Config loaded from: config.json
+[2025-06-23 07:07:54,222] INFO main:47 - Ensured directory exists: data\raw_input
+[2025-06-23 07:07:54,222] INFO main:47 - Ensured directory exists: data\cleaned_text
+[2025-06-23 07:07:54,224] INFO main:47 - Ensured directory exists: data\embeddings
+[2025-06-23 07:07:54,224] INFO main:47 - Ensured directory exists: data\vectordb
+[2025-06-23 07:07:54,235] INFO main:63 - [Step 02] Embedding generation started.
+[2025-06-23 07:07:54,241] DEBUG connectionpool:1003 - Starting new HTTPS connection (1): huggingface.co:443
+[2025-06-23 07:07:54,950] DEBUG connectionpool:456 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+[2025-06-23 07:07:55,469] DEBUG connectionpool:456 - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+[2025-06-23 07:07:56,754] DEBUG connectionpool:456 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 200 0
+[2025-06-23 07:07:58,201] INFO embedding_preparer:26 - Loaded model/tokenizer: sentence-transformers/all-MiniLM-L6-v2 on cpu
+[2025-06-23 07:07:58,202] INFO embedding_preparer:46 - Processing: data\cleaned_text\ATMEGA2560.txt
+[2025-06-23 07:07:58,317] INFO embedding_preparer:85 - Saved embedding: data\embeddings\ATMEGA2560_embeddings.json
+[2025-06-23 07:07:58,319] INFO main:76 - [Step 02] Embedding generation completed.
+[2025-06-23 07:07:58,329] INFO main:216 - RAG pipeline done

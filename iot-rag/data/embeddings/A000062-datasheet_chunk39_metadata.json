@@ -1,0 +1,1 @@
+{"source_file": "A000062-datasheet_chunk39.txt", "text_preview": "spi ( pwm ~ ) 9 d9 / sda2 gpio 9 / i2c 2 ( pwm ~ ) 10 d8 / scl2 gpio 8 / i2c 2 ( pwm ~ ) 11 d7 gpio 7 ( pwm ~ ) 12 d6 gpio 6pwm ~ 13 d5 gpio 5 ( pwm ~ ) 14 d4 gpio 4 ( pwm ~ ) 15 d3 gpio 3 ( pwm ~ ) 16 d2 gpio 2 ( pwm ~ ) 17 d1 / tx0 gpio 1 / 0 18 d0 / tx0 gpio 0 / 0 19 d14 / tx3 gpio 14 / 3 20 d15 "}

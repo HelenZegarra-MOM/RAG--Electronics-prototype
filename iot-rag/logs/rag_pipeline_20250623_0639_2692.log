@@ -1,0 +1,36 @@
+[2025-06-23 06:39:26,922] INFO main:204 - ------ Command line arguments -------
+[2025-06-23 06:39:26,922] INFO main:205 - step                : step04_retrieve_chunks
+[2025-06-23 06:39:26,922] INFO main:206 - input_filename      : None
+[2025-06-23 06:39:26,923] INFO main:207 - query_args          : What is the operating temperature of the ATMEGA2560?
+[2025-06-23 06:39:26,923] INFO main:208 - use_rag             : False
+[2025-06-23 06:39:26,923] INFO main:209 - ------ Config Settings -------
+[2025-06-23 06:39:26,923] INFO main:211 - cleaned_text_directory        : data/cleaned_text
+[2025-06-23 06:39:26,934] INFO main:211 - collection_name               : collections
+[2025-06-23 06:39:26,934] INFO main:211 - embedding_model_name          : sentence-transformers/all-MiniLM-L6-v2
+[2025-06-23 06:39:26,934] INFO main:211 - embeddings_directory          : data/embeddings
+[2025-06-23 06:39:26,935] INFO main:211 - llm_api_url                   : http://127.0.0.1:1234
+[2025-06-23 06:39:26,935] INFO main:211 - llm_model_name                : llama-3.2-1b-instruct
+[2025-06-23 06:39:26,935] INFO main:211 - log_level                     : DEBUG
+[2025-06-23 06:39:26,935] INFO main:211 - raw_input_directory           : data/raw_input
+[2025-06-23 06:39:26,936] INFO main:211 - retriever_min_score_threshold : 3.5
+[2025-06-23 06:39:26,936] INFO main:211 - vectordb_directory            : data/vectordb
+[2025-06-23 06:39:26,936] INFO main:212 - ------------------------------
+[2025-06-23 06:39:26,937] INFO main:52 - Ensured directory exists: data\raw_input
+[2025-06-23 06:39:26,937] INFO main:52 - Ensured directory exists: data\cleaned_text
+[2025-06-23 06:39:26,938] INFO main:52 - Ensured directory exists: data\embeddings
+[2025-06-23 06:39:26,938] INFO main:52 - Ensured directory exists: data\vectordb
+[2025-06-23 06:39:26,938] INFO main:109 - [Step 04] Retrieval started.
+[2025-06-23 06:39:26,941] INFO SentenceTransformer:211 - Use pytorch device_name: cpu
+[2025-06-23 06:39:26,941] INFO SentenceTransformer:219 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+[2025-06-23 06:39:33,408] INFO posthog:22 - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[2025-06-23 06:39:33,514] INFO chromadb_retriever:25 - 🔍 Querying ChromaDB with: What is the operating temperature of the ATMEGA2560?
+[2025-06-23 06:39:33,598] DEBUG chromadb_retriever:39 - Accepted match: ATMEGA2560.txt with score 2.5684
+[2025-06-23 06:39:33,599] INFO chromadb_retriever:49 - Retrieved 1 relevant document(s) after filtering.
+[2025-06-23 06:39:33,599] ERROR main:228 - Pipeline crashed during execution.
+Traceback (most recent call last):
+  File "C:\Users\Helen Zegarra\OneDrive\Documents\Desktop\AI class projects\iot-rag\main.py", line 225, in main
+    steps[args.step](args)
+  File "C:\Users\Helen Zegarra\OneDrive\Documents\Desktop\AI class projects\iot-rag\main.py", line 126, in step04_retrieve_relevant_chunks
+    preview_text = (doc_preview[:150] + "...") if len(doc_preview) > 250 else doc_preview
+TypeError: object of type 'NoneType' has no len()
+[2025-06-23 06:39:33,600] INFO main:230 - RAG pipeline done

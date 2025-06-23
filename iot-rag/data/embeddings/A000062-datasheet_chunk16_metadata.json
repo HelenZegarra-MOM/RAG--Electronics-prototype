@@ -1,0 +1,1 @@
+{"source_file": "A000062-datasheet_chunk16.txt", "text_preview": "reset reset button debug debug jtag pinnout spi spi pinout icsp1 icspi1 pinout arduino due 16 / 50 arduino due modified : 19 / 06 / 2025 6. 5. 1 jtag connector debugging capabilities are integrated directly into the arduino due and are accessible via the 6 - pin jtag connector. pin function type des"}

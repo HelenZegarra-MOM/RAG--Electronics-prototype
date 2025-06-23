@@ -1,0 +1,30 @@
+[2025-06-23 07:01:47,747] INFO main:229 - ------ Command line arguments -------
+[2025-06-23 07:01:47,747] INFO main:230 - step                : step03_store_vectors
+[2025-06-23 07:01:47,747] INFO main:231 - input_filename      : ATMEGA2560.txt
+[2025-06-23 07:01:47,748] INFO main:232 - query_args          : None
+[2025-06-23 07:01:47,748] INFO main:233 - use_rag             : False
+[2025-06-23 07:01:47,748] INFO main:234 - ------ Config Settings -------
+[2025-06-23 07:01:47,748] INFO main:236 - cleaned_text_directory        : data/cleaned_text
+[2025-06-23 07:01:47,749] INFO main:236 - collection_name               : collections
+[2025-06-23 07:01:47,749] INFO main:236 - embedding_model_name          : sentence-transformers/all-MiniLM-L6-v2
+[2025-06-23 07:01:47,749] INFO main:236 - embeddings_directory          : data/embeddings
+[2025-06-23 07:01:47,749] INFO main:236 - llm_api_url                   : http://127.0.0.1:1234
+[2025-06-23 07:01:47,750] INFO main:236 - llm_model_name                : llama-3.2-1b-instruct
+[2025-06-23 07:01:47,750] INFO main:236 - log_level                     : DEBUG
+[2025-06-23 07:01:47,750] INFO main:236 - raw_input_directory           : data/raw_input
+[2025-06-23 07:01:47,750] INFO main:236 - retriever_min_score_threshold : 3.5
+[2025-06-23 07:01:47,750] INFO main:236 - vectordb_directory            : data/vectordb
+[2025-06-23 07:01:47,750] INFO main:237 - ------------------------------
+[2025-06-23 07:01:47,751] INFO main:55 - Ensured directory exists: data\raw_input
+[2025-06-23 07:01:47,753] INFO main:55 - Ensured directory exists: data\cleaned_text
+[2025-06-23 07:01:47,753] INFO main:55 - Ensured directory exists: data\embeddings
+[2025-06-23 07:01:47,754] INFO main:55 - Ensured directory exists: data\vectordb
+[2025-06-23 07:01:47,754] INFO main:92 - [Step 03] Vector storage started.
+[2025-06-23 07:01:47,754] INFO main:95 - Deleting existing vectordb
+[2025-06-23 07:01:47,755] ERROR utilities:37 - Error deleting directory data/vectordb: [WinError 5] Access is denied: 'data/vectordb'
+[2025-06-23 07:01:47,756] INFO embedding_loader:27 - 🔃 Starting vector store creation...
+[2025-06-23 07:01:47,786] INFO posthog:22 - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[2025-06-23 07:01:47,949] WARNING embedding_loader:42 - ❌ Embedding file not found: data\embeddings\ATMEGA2560.txt_embeddings.json
+[2025-06-23 07:01:47,949] INFO embedding_loader:70 - 📚 Vector storage completed.
+[2025-06-23 07:01:47,949] INFO main:112 - [Step 03] Vector storage completed.
+[2025-06-23 07:01:47,949] INFO main:255 - RAG pipeline done

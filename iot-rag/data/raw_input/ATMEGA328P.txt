@@ -1,0 +1,18 @@
+Arduino Uno R3 Datasheet
+1. Microcontroller Specifications:
+Type: ATmega328P
+Memory: 32KB Flash, 2KB SRAM, 1KB EEPROM.
+Clock Speed: 16 MHz. Features include POR and BOD.
+Peripherals: UART, SPI, I2C, 6x ADC, 3 Timers.
+2. Pin Configurations:
+Digital I/O Pins: 14 (6 with PWM output).
+Analog Input Pins: 6 (A0-A5). Input range 0-5V.
+Power Pins: VCC (5V), GND. Communication Pins: TX, RX, SDA, SCL.
+Dedicated Reset Pin.
+3. Power Requirements:
+Operating Voltage: 5V. Input Voltage: 7V - 12V (recommended).
+4. Programming Interface:
+USB Interface: Yes (via ATmega16U2). Supports ICSP for direct programming.
+5. Additional Information:
+Interrupts: External Interrupts available. PWM Channels: 6.
+Refer to external datasheet links for more details.

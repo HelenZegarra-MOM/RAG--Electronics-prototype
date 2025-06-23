@@ -1,0 +1,1 @@
+{"source_file": "RP2040_chunk1.txt", "text_preview": "raspberry pi pico datasheet 1. microcontroller specifications : type : rp2040 memory : 2mb flash, 264kb sram. clock speed : 133 mhz. flexible clock. peripherals : 2x uart, 2x spi, 2x i2c, 4x adc, 16x pwm controllers. 2. pin configurations : gpio pins : 26 ( most can be used as digital i / o ). analo"}
